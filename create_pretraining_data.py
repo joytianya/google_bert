@@ -22,7 +22,7 @@ import collections
 import random
 import tokenization
 import tensorflow as tf
-
+from langconv import Converter
 flags = tf.flags
 
 FLAGS = flags.FLAGS
@@ -64,6 +64,9 @@ flags.DEFINE_float(
     "Probability of creating sequences which are shorter than the "
     "maximum length.")
 
+def Traditional2Simplified(sentence):
+  sentence = Converter('zh-hans').convert(sentence)
+  return sentence
 
 class TrainingInstance(object):
   """A single training instance (sentence pair)."""
@@ -178,7 +181,7 @@ def create_float_feature(values):
 
 def create_training_instances(input_files, tokenizer, max_seq_length,
                               dupe_factor, short_seq_prob, masked_lm_prob,
-                              max_predictions_per_seq, rng):
+                              max_predictions_per_seq, rng,t2s=True):
   """Create `TrainingInstance`s from raw text."""
   all_documents = [[]]
 
@@ -191,7 +194,9 @@ def create_training_instances(input_files, tokenizer, max_seq_length,
   for input_file in input_files:
     with tf.gfile.GFile(input_file, "r") as reader:
       while True:
-        line = tokenization.convert_to_unicode(reader.readline())
+        line=reader.readline()
+        if t2s==True: line = Traditional2Simplified(line)
+        line = tokenization.convert_to_unicode(line)
         if not line:
           break
         line = line.strip()
