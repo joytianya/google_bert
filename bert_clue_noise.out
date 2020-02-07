@@ -1,0 +1,1360 @@
+WARNING:tensorflow:From /home/zhangxw0413/github/bert/optimization.py:87: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From run_pretraining_noise.py:494: The name tf.app.run is deprecated. Please use tf.compat.v1.app.run instead.
+
+WARNING:tensorflow:From run_pretraining_noise.py:408: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+W0207 13:47:04.649228 140019253761792 module_wrapper.py:139] From run_pretraining_noise.py:408: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+WARNING:tensorflow:From run_pretraining_noise.py:408: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+W0207 13:47:04.649445 140019253761792 module_wrapper.py:139] From run_pretraining_noise.py:408: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+WARNING:tensorflow:From /home/zhangxw0413/github/bert/modeling_noise.py:93: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+W0207 13:47:04.649607 140019253761792 module_wrapper.py:139] From /home/zhangxw0413/github/bert/modeling_noise.py:93: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+WARNING:tensorflow:From run_pretraining_noise.py:415: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+W0207 13:47:04.650411 140019253761792 module_wrapper.py:139] From run_pretraining_noise.py:415: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+WARNING:tensorflow:From run_pretraining_noise.py:419: The name tf.gfile.Glob is deprecated. Please use tf.io.gfile.glob instead.
+
+W0207 13:47:05.534509 140019253761792 module_wrapper.py:139] From run_pretraining_noise.py:419: The name tf.gfile.Glob is deprecated. Please use tf.io.gfile.glob instead.
+
+WARNING:tensorflow:From run_pretraining_noise.py:421: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+W0207 13:47:05.580475 140019253761792 module_wrapper.py:139] From run_pretraining_noise.py:421: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+INFO:tensorflow:*** Input Files ***
+I0207 13:47:05.580730 140019253761792 run_pretraining_noise.py:421] *** Input Files ***
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_1.tfrecord
+I0207 13:47:05.580807 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_1.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_10.tfrecord
+I0207 13:47:05.580866 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_10.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_100.tfrecord
+I0207 13:47:05.580919 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_100.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_101.tfrecord
+I0207 13:47:05.580974 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_101.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_102.tfrecord
+I0207 13:47:05.581024 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_102.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_103.tfrecord
+I0207 13:47:05.581074 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_103.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_104.tfrecord
+I0207 13:47:05.581123 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_104.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_105.tfrecord
+I0207 13:47:05.581186 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_105.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_106.tfrecord
+I0207 13:47:05.581236 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_106.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_107.tfrecord
+I0207 13:47:05.581284 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_107.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_108.tfrecord
+I0207 13:47:05.581332 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_108.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_109.tfrecord
+I0207 13:47:05.581380 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_109.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_11.tfrecord
+I0207 13:47:05.581427 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_11.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_110.tfrecord
+I0207 13:47:05.581486 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_110.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_111.tfrecord
+I0207 13:47:05.581534 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_111.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_112.tfrecord
+I0207 13:47:05.581582 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_112.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_113.tfrecord
+I0207 13:47:05.581629 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_113.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_114.tfrecord
+I0207 13:47:05.581676 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_114.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_115.tfrecord
+I0207 13:47:05.581724 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_115.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_116.tfrecord
+I0207 13:47:05.581771 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_116.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_117.tfrecord
+I0207 13:47:05.581819 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_117.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_118.tfrecord
+I0207 13:47:05.581866 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_118.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_119.tfrecord
+I0207 13:47:05.581914 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_119.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_12.tfrecord
+I0207 13:47:05.581964 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_12.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_120.tfrecord
+I0207 13:47:05.582063 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_120.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_121.tfrecord
+I0207 13:47:05.582115 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_121.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_122.tfrecord
+I0207 13:47:05.582163 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_122.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_123.tfrecord
+I0207 13:47:05.582211 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_123.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_124.tfrecord
+I0207 13:47:05.582257 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_124.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_125.tfrecord
+I0207 13:47:05.582305 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_125.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_126.tfrecord
+I0207 13:47:05.582352 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_126.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_127.tfrecord
+I0207 13:47:05.582399 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_127.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_128.tfrecord
+I0207 13:47:05.582452 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_128.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_129.tfrecord
+I0207 13:47:05.582500 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_129.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_13.tfrecord
+I0207 13:47:05.582548 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_13.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_130.tfrecord
+I0207 13:47:05.582595 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_130.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_131.tfrecord
+I0207 13:47:05.582642 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_131.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_132.tfrecord
+I0207 13:47:05.582690 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_132.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_133.tfrecord
+I0207 13:47:05.582736 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_133.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_134.tfrecord
+I0207 13:47:05.582784 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_134.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_135.tfrecord
+I0207 13:47:05.582836 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_135.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_136.tfrecord
+I0207 13:47:05.582885 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_136.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_137.tfrecord
+I0207 13:47:05.582932 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_137.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_138.tfrecord
+I0207 13:47:05.582984 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_138.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_139.tfrecord
+I0207 13:47:05.583032 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_139.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_14.tfrecord
+I0207 13:47:05.583080 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_14.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_140.tfrecord
+I0207 13:47:05.583127 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_140.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_141.tfrecord
+I0207 13:47:05.583174 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_141.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_142.tfrecord
+I0207 13:47:05.583221 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_142.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_143.tfrecord
+I0207 13:47:05.583269 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_143.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_144.tfrecord
+I0207 13:47:05.583316 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_144.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_145.tfrecord
+I0207 13:47:05.583364 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_145.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_146.tfrecord
+I0207 13:47:05.583410 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_146.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_147.tfrecord
+I0207 13:47:05.583476 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_147.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_148.tfrecord
+I0207 13:47:05.583527 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_148.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_149.tfrecord
+I0207 13:47:05.583575 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_149.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_15.tfrecord
+I0207 13:47:05.583621 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_15.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_150.tfrecord
+I0207 13:47:05.583674 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_150.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_151.tfrecord
+I0207 13:47:05.583722 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_151.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_152.tfrecord
+I0207 13:47:05.583770 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_152.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_153.tfrecord
+I0207 13:47:05.583817 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_153.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_154.tfrecord
+I0207 13:47:05.583863 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_154.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_155.tfrecord
+I0207 13:47:05.583910 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_155.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_156.tfrecord
+I0207 13:47:05.583961 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_156.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_157.tfrecord
+I0207 13:47:05.584009 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_157.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_158.tfrecord
+I0207 13:47:05.584056 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_158.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_159.tfrecord
+I0207 13:47:05.584104 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_159.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_16.tfrecord
+I0207 13:47:05.584151 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_16.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_160.tfrecord
+I0207 13:47:05.584199 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_160.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_161.tfrecord
+I0207 13:47:05.584256 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_161.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_162.tfrecord
+I0207 13:47:05.584305 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_162.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_163.tfrecord
+I0207 13:47:05.584352 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_163.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_164.tfrecord
+I0207 13:47:05.584399 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_164.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_165.tfrecord
+I0207 13:47:05.584457 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_165.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_166.tfrecord
+I0207 13:47:05.584540 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_166.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_167.tfrecord
+I0207 13:47:05.584590 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_167.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_168.tfrecord
+I0207 13:47:05.584639 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_168.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_169.tfrecord
+I0207 13:47:05.584688 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_169.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_17.tfrecord
+I0207 13:47:05.584737 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_17.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_170.tfrecord
+I0207 13:47:05.584786 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_170.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_171.tfrecord
+I0207 13:47:05.584836 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_171.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_172.tfrecord
+I0207 13:47:05.584884 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_172.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_173.tfrecord
+I0207 13:47:05.584933 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_173.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_174.tfrecord
+I0207 13:47:05.584990 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_174.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_175.tfrecord
+I0207 13:47:05.585041 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_175.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_176.tfrecord
+I0207 13:47:05.585097 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_176.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_177.tfrecord
+I0207 13:47:05.585156 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_177.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_178.tfrecord
+I0207 13:47:05.585208 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_178.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_179.tfrecord
+I0207 13:47:05.585257 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_179.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_18.tfrecord
+I0207 13:47:05.585306 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_18.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_180.tfrecord
+I0207 13:47:05.585360 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_180.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_181.tfrecord
+I0207 13:47:05.585410 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_181.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_182.tfrecord
+I0207 13:47:05.585658 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_182.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_183.tfrecord
+I0207 13:47:05.585804 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_183.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_184.tfrecord
+I0207 13:47:05.585872 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_184.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_185.tfrecord
+I0207 13:47:05.585944 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_185.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_186.tfrecord
+I0207 13:47:05.586042 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_186.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_187.tfrecord
+I0207 13:47:05.586120 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_187.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_188.tfrecord
+I0207 13:47:05.586214 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_188.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_189.tfrecord
+I0207 13:47:05.586272 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_189.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_19.tfrecord
+I0207 13:47:05.586331 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_19.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_190.tfrecord
+I0207 13:47:05.586390 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_190.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_191.tfrecord
+I0207 13:47:05.586454 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_191.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_192.tfrecord
+I0207 13:47:05.586513 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_192.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_193.tfrecord
+I0207 13:47:05.586575 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_193.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_194.tfrecord
+I0207 13:47:05.586635 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_194.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_195.tfrecord
+I0207 13:47:05.586692 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_195.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_196.tfrecord
+I0207 13:47:05.586763 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_196.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_197.tfrecord
+I0207 13:47:05.586824 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_197.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_198.tfrecord
+I0207 13:47:05.586901 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_198.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_199.tfrecord
+I0207 13:47:05.587011 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_199.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_2.tfrecord
+I0207 13:47:05.587069 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_2.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_20.tfrecord
+I0207 13:47:05.587126 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_20.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_200.tfrecord
+I0207 13:47:05.587181 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_200.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_201.tfrecord
+I0207 13:47:05.587239 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_201.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_202.tfrecord
+I0207 13:47:05.587295 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_202.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_203.tfrecord
+I0207 13:47:05.587355 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_203.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_204.tfrecord
+I0207 13:47:05.587408 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_204.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_205.tfrecord
+I0207 13:47:05.587478 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_205.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_206.tfrecord
+I0207 13:47:05.587532 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_206.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_207.tfrecord
+I0207 13:47:05.587592 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_207.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_208.tfrecord
+I0207 13:47:05.587646 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_208.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_209.tfrecord
+I0207 13:47:05.587699 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_209.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_21.tfrecord
+I0207 13:47:05.587760 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_21.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_210.tfrecord
+I0207 13:47:05.587815 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_210.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_211.tfrecord
+I0207 13:47:05.587868 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_211.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_212.tfrecord
+I0207 13:47:05.587932 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_212.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_213.tfrecord
+I0207 13:47:05.587987 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_213.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_214.tfrecord
+I0207 13:47:05.588040 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_214.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_215.tfrecord
+I0207 13:47:05.588094 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_215.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_216.tfrecord
+I0207 13:47:05.588147 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_216.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_217.tfrecord
+I0207 13:47:05.588201 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_217.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_218.tfrecord
+I0207 13:47:05.588254 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_218.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_219.tfrecord
+I0207 13:47:05.588307 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_219.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_22.tfrecord
+I0207 13:47:05.588360 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_22.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_220.tfrecord
+I0207 13:47:05.588415 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_220.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_221.tfrecord
+I0207 13:47:05.588471 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_221.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_222.tfrecord
+I0207 13:47:05.588524 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_222.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_223.tfrecord
+I0207 13:47:05.588577 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_223.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_224.tfrecord
+I0207 13:47:05.588630 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_224.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_225.tfrecord
+I0207 13:47:05.588689 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_225.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_226.tfrecord
+I0207 13:47:05.588742 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_226.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_227.tfrecord
+I0207 13:47:05.588793 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_227.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_228.tfrecord
+I0207 13:47:05.588851 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_228.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_229.tfrecord
+I0207 13:47:05.588905 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_229.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_23.tfrecord
+I0207 13:47:05.588966 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_23.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_230.tfrecord
+I0207 13:47:05.589019 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_230.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_231.tfrecord
+I0207 13:47:05.589072 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_231.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_232.tfrecord
+I0207 13:47:05.589126 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_232.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_233.tfrecord
+I0207 13:47:05.589179 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_233.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_234.tfrecord
+I0207 13:47:05.589233 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_234.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_235.tfrecord
+I0207 13:47:05.589285 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_235.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_236.tfrecord
+I0207 13:47:05.589337 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_236.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_237.tfrecord
+I0207 13:47:05.589391 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_237.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_238.tfrecord
+I0207 13:47:05.589447 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_238.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_239.tfrecord
+I0207 13:47:05.589500 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_239.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_24.tfrecord
+I0207 13:47:05.589562 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_24.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_240.tfrecord
+I0207 13:47:05.589616 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_240.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_241.tfrecord
+I0207 13:47:05.589668 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_241.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_242.tfrecord
+I0207 13:47:05.589720 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_242.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_243.tfrecord
+I0207 13:47:05.589772 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_243.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_244.tfrecord
+I0207 13:47:05.589823 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_244.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_245.tfrecord
+I0207 13:47:05.589876 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_245.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_246.tfrecord
+I0207 13:47:05.589936 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_246.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_247.tfrecord
+I0207 13:47:05.589989 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_247.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_248.tfrecord
+I0207 13:47:05.590091 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_248.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_249.tfrecord
+I0207 13:47:05.590143 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_249.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_25.tfrecord
+I0207 13:47:05.590195 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_25.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_250.tfrecord
+I0207 13:47:05.590247 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_250.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_251.tfrecord
+I0207 13:47:05.590299 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_251.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_252.tfrecord
+I0207 13:47:05.590350 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_252.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_253.tfrecord
+I0207 13:47:05.590409 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_253.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_254.tfrecord
+I0207 13:47:05.590465 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_254.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_255.tfrecord
+I0207 13:47:05.590525 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_255.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_256.tfrecord
+I0207 13:47:05.590578 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_256.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_257.tfrecord
+I0207 13:47:05.590631 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_257.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_258.tfrecord
+I0207 13:47:05.590684 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_258.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_259.tfrecord
+I0207 13:47:05.590736 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_259.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_26.tfrecord
+I0207 13:47:05.590789 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_26.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_260.tfrecord
+I0207 13:47:05.590841 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_260.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_261.tfrecord
+I0207 13:47:05.590893 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_261.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_262.tfrecord
+I0207 13:47:05.590954 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_262.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_263.tfrecord
+I0207 13:47:05.591006 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_263.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_264.tfrecord
+I0207 13:47:05.591058 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_264.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_265.tfrecord
+I0207 13:47:05.591110 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_265.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_266.tfrecord
+I0207 13:47:05.591162 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_266.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_267.tfrecord
+I0207 13:47:05.591214 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_267.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_268.tfrecord
+I0207 13:47:05.591266 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_268.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_269.tfrecord
+I0207 13:47:05.591318 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_269.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_27.tfrecord
+I0207 13:47:05.591377 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_27.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_270.tfrecord
+I0207 13:47:05.591433 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_270.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_271.tfrecord
+I0207 13:47:05.591486 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_271.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_272.tfrecord
+I0207 13:47:05.591538 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_272.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_273.tfrecord
+I0207 13:47:05.591601 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_273.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_274.tfrecord
+I0207 13:47:05.591653 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_274.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_275.tfrecord
+I0207 13:47:05.591705 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_275.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_276.tfrecord
+I0207 13:47:05.591757 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_276.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_277.tfrecord
+I0207 13:47:05.591809 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_277.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_278.tfrecord
+I0207 13:47:05.591860 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_278.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_279.tfrecord
+I0207 13:47:05.591916 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_279.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_28.tfrecord
+I0207 13:47:05.591969 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_28.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_280.tfrecord
+I0207 13:47:05.592020 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_280.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_281.tfrecord
+I0207 13:47:05.592072 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_281.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_282.tfrecord
+I0207 13:47:05.592123 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_282.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_283.tfrecord
+I0207 13:47:05.592175 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_283.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_284.tfrecord
+I0207 13:47:05.592226 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_284.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_285.tfrecord
+I0207 13:47:05.592284 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_285.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_286.tfrecord
+I0207 13:47:05.592336 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_286.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_287.tfrecord
+I0207 13:47:05.592387 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_287.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_288.tfrecord
+I0207 13:47:05.592441 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_288.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_289.tfrecord
+I0207 13:47:05.592493 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_289.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_29.tfrecord
+I0207 13:47:05.592548 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_29.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_290.tfrecord
+I0207 13:47:05.592601 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_290.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_291.tfrecord
+I0207 13:47:05.592652 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_291.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_292.tfrecord
+I0207 13:47:05.592703 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_292.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_293.tfrecord
+I0207 13:47:05.592755 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_293.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_294.tfrecord
+I0207 13:47:05.592806 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_294.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_295.tfrecord
+I0207 13:47:05.592858 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_295.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_296.tfrecord
+I0207 13:47:05.592910 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_296.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_297.tfrecord
+I0207 13:47:05.592970 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_297.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_298.tfrecord
+I0207 13:47:05.593022 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_298.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_299.tfrecord
+I0207 13:47:05.593073 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_299.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_3.tfrecord
+I0207 13:47:05.593131 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_3.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_30.tfrecord
+I0207 13:47:05.593193 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_30.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_300.tfrecord
+I0207 13:47:05.593245 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_300.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_31.tfrecord
+I0207 13:47:05.593297 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_31.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_32.tfrecord
+I0207 13:47:05.593348 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_32.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_33.tfrecord
+I0207 13:47:05.593400 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_33.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_34.tfrecord
+I0207 13:47:05.593455 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_34.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_35.tfrecord
+I0207 13:47:05.593520 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_35.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_36.tfrecord
+I0207 13:47:05.593572 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_36.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_37.tfrecord
+I0207 13:47:05.593624 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_37.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_38.tfrecord
+I0207 13:47:05.593675 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_38.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_39.tfrecord
+I0207 13:47:05.593726 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_39.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_4.tfrecord
+I0207 13:47:05.593777 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_4.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_40.tfrecord
+I0207 13:47:05.593829 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_40.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_41.tfrecord
+I0207 13:47:05.593881 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_41.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_42.tfrecord
+I0207 13:47:05.593938 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_42.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_43.tfrecord
+I0207 13:47:05.593990 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_43.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_44.tfrecord
+I0207 13:47:05.594080 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_44.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_45.tfrecord
+I0207 13:47:05.594134 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_45.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_46.tfrecord
+I0207 13:47:05.594186 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_46.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_47.tfrecord
+I0207 13:47:05.594237 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_47.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_48.tfrecord
+I0207 13:47:05.594288 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_48.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_49.tfrecord
+I0207 13:47:05.594340 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_49.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_5.tfrecord
+I0207 13:47:05.594394 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_5.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_50.tfrecord
+I0207 13:47:05.594449 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_50.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_51.tfrecord
+I0207 13:47:05.594501 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_51.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_52.tfrecord
+I0207 13:47:05.594552 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_52.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_53.tfrecord
+I0207 13:47:05.594603 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_53.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_54.tfrecord
+I0207 13:47:05.594654 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_54.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_55.tfrecord
+I0207 13:47:05.594705 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_55.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_56.tfrecord
+I0207 13:47:05.594757 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_56.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_57.tfrecord
+I0207 13:47:05.594809 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_57.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_58.tfrecord
+I0207 13:47:05.594861 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_58.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_59.tfrecord
+I0207 13:47:05.594918 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_59.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_6.tfrecord
+I0207 13:47:05.594976 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_6.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_60.tfrecord
+I0207 13:47:05.595028 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_60.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_61.tfrecord
+I0207 13:47:05.595080 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_61.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_62.tfrecord
+I0207 13:47:05.595131 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_62.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_63.tfrecord
+I0207 13:47:05.595183 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_63.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_64.tfrecord
+I0207 13:47:05.595235 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_64.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_65.tfrecord
+I0207 13:47:05.595286 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_65.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_66.tfrecord
+I0207 13:47:05.595338 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_66.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_67.tfrecord
+I0207 13:47:05.595389 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_67.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_68.tfrecord
+I0207 13:47:05.595443 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_68.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_69.tfrecord
+I0207 13:47:05.595495 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_69.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_7.tfrecord
+I0207 13:47:05.595546 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_7.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_70.tfrecord
+I0207 13:47:05.595598 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_70.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_71.tfrecord
+I0207 13:47:05.595659 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_71.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_72.tfrecord
+I0207 13:47:05.595710 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_72.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_73.tfrecord
+I0207 13:47:05.595762 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_73.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_74.tfrecord
+I0207 13:47:05.595820 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_74.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_75.tfrecord
+I0207 13:47:05.595872 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_75.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_76.tfrecord
+I0207 13:47:05.595929 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_76.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_77.tfrecord
+I0207 13:47:05.595981 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_77.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_78.tfrecord
+I0207 13:47:05.596033 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_78.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_79.tfrecord
+I0207 13:47:05.596084 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_79.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_8.tfrecord
+I0207 13:47:05.596135 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_8.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_80.tfrecord
+I0207 13:47:05.596187 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_80.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_81.tfrecord
+I0207 13:47:05.596238 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_81.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_82.tfrecord
+I0207 13:47:05.596289 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_82.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_83.tfrecord
+I0207 13:47:05.596340 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_83.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_84.tfrecord
+I0207 13:47:05.596391 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_84.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_85.tfrecord
+I0207 13:47:05.596445 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_85.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_86.tfrecord
+I0207 13:47:05.596496 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_86.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_87.tfrecord
+I0207 13:47:05.596547 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_87.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_88.tfrecord
+I0207 13:47:05.596599 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_88.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_89.tfrecord
+I0207 13:47:05.596650 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_89.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_9.tfrecord
+I0207 13:47:05.596708 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_9.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_90.tfrecord
+I0207 13:47:05.596760 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_90.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_91.tfrecord
+I0207 13:47:05.596812 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_91.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_92.tfrecord
+I0207 13:47:05.596864 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_92.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_93.tfrecord
+I0207 13:47:05.596923 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_93.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_94.tfrecord
+I0207 13:47:05.596975 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_94.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_95.tfrecord
+I0207 13:47:05.597027 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_95.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_96.tfrecord
+I0207 13:47:05.597079 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_96.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_97.tfrecord
+I0207 13:47:05.597130 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_97.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_98.tfrecord
+I0207 13:47:05.597195 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_98.tfrecord
+INFO:tensorflow:  gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_99.tfrecord
+I0207 13:47:05.597263 140019253761792 run_pretraining_noise.py:423]   gs://clue_pretrain_corpus/tfrecords/bert_base_128/clue_pretrain128_99.tfrecord
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+W0207 13:47:05.597434 140019253761792 lazy_loader.py:50] 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+WARNING:tensorflow:Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f586edc2510>) includes params argument, but params are not passed to Estimator.
+W0207 13:47:06.188437 140019253761792 estimator.py:1994] Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f586edc2510>) includes params argument, but params are not passed to Estimator.
+INFO:tensorflow:Using config: {'_train_distribute': None, '_num_worker_replicas': 1, '_cluster': <tensorflow.python.distribute.cluster_resolver.tpu_cluster_resolver.TPUClusterResolver object at 0x7f586edb7fd0>, '_tpu_config': TPUConfig(iterations_per_loop=1000, num_shards=8, num_cores_per_replica=None, per_host_input_for_training=3, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None, eval_training_input_configuration=2, experimental_host_call_every_n_steps=1), '_num_ps_replicas': 0, '_save_checkpoints_secs': None, '_protocol': None, '_service': None, '_keep_checkpoint_max': 5, '_eval_distribute': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f586b42f7b8>, '_keep_checkpoint_every_n_hours': 10000, '_evaluation_master': 'grpc://10.100.247.82:8470', '_save_checkpoints_steps': 1000, '_task_type': 'worker', '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_tf_random_seed': None, '_model_dir': 'gs://models_zxw/fine_tuning_models/nlp/bert_zh_clue_corpus/len_128_noise/20200207-134702', '_save_summary_steps': 100, '_global_id_in_cluster': 0, '_session_config': allow_soft_placement: true
+cluster_def {
+  job {
+    name: "worker"
+    tasks {
+      key: 0
+      value: "10.100.247.82:8470"
+    }
+  }
+}
+isolate_session_state: true
+, '_experimental_distribute': None, '_is_chief': True, '_log_step_count_steps': None, '_master': 'grpc://10.100.247.82:8470', '_task_id': 0, '_device_fn': None}
+I0207 13:47:06.189610 140019253761792 estimator.py:212] Using config: {'_train_distribute': None, '_num_worker_replicas': 1, '_cluster': <tensorflow.python.distribute.cluster_resolver.tpu_cluster_resolver.TPUClusterResolver object at 0x7f586edb7fd0>, '_tpu_config': TPUConfig(iterations_per_loop=1000, num_shards=8, num_cores_per_replica=None, per_host_input_for_training=3, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None, eval_training_input_configuration=2, experimental_host_call_every_n_steps=1), '_num_ps_replicas': 0, '_save_checkpoints_secs': None, '_protocol': None, '_service': None, '_keep_checkpoint_max': 5, '_eval_distribute': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f586b42f7b8>, '_keep_checkpoint_every_n_hours': 10000, '_evaluation_master': 'grpc://10.100.247.82:8470', '_save_checkpoints_steps': 1000, '_task_type': 'worker', '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_tf_random_seed': None, '_model_dir': 'gs://models_zxw/fine_tuning_models/nlp/bert_zh_clue_corpus/len_128_noise/20200207-134702', '_save_summary_steps': 100, '_global_id_in_cluster': 0, '_session_config': allow_soft_placement: true
+cluster_def {
+  job {
+    name: "worker"
+    tasks {
+      key: 0
+      value: "10.100.247.82:8470"
+    }
+  }
+}
+isolate_session_state: true
+, '_experimental_distribute': None, '_is_chief': True, '_log_step_count_steps': None, '_master': 'grpc://10.100.247.82:8470', '_task_id': 0, '_device_fn': None}
+INFO:tensorflow:_TPUContext: eval_on_tpu True
+I0207 13:47:06.190331 140019253761792 tpu_context.py:220] _TPUContext: eval_on_tpu True
+INFO:tensorflow:***** Running training *****
+I0207 13:47:06.190765 140019253761792 run_pretraining_noise.py:460] ***** Running training *****
+INFO:tensorflow:  Batch size = 1024
+I0207 13:47:06.190846 140019253761792 run_pretraining_noise.py:461]   Batch size = 1024
+INFO:tensorflow:Querying Tensorflow master (grpc://10.100.247.82:8470) for TPU system metadata.
+I0207 13:47:06.269328 140019253761792 tpu_system_metadata.py:78] Querying Tensorflow master (grpc://10.100.247.82:8470) for TPU system metadata.
+2020-02-07 13:47:06.270574: W tensorflow/core/distributed_runtime/rpc/grpc_session.cc:370] GrpcSession::ListDevices will initialize the session with an empty graph and other defaults because the session has not yet been created.
+INFO:tensorflow:Found TPU system:
+I0207 13:47:06.290501 140019253761792 tpu_system_metadata.py:148] Found TPU system:
+INFO:tensorflow:*** Num TPU Cores: 8
+I0207 13:47:06.290759 140019253761792 tpu_system_metadata.py:149] *** Num TPU Cores: 8
+INFO:tensorflow:*** Num TPU Workers: 1
+I0207 13:47:06.290864 140019253761792 tpu_system_metadata.py:150] *** Num TPU Workers: 1
+INFO:tensorflow:*** Num TPU Cores Per Worker: 8
+I0207 13:47:06.290938 140019253761792 tpu_system_metadata.py:152] *** Num TPU Cores Per Worker: 8
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:CPU:0, CPU, -1, 14111691236834920300)
+I0207 13:47:06.291008 140019253761792 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:CPU:0, CPU, -1, 14111691236834920300)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:0, TPU, 17179869184, 16355577775655736379)
+I0207 13:47:06.291606 140019253761792 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:0, TPU, 17179869184, 16355577775655736379)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:1, TPU, 17179869184, 17694653819364025171)
+I0207 13:47:06.291674 140019253761792 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:1, TPU, 17179869184, 17694653819364025171)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:2, TPU, 17179869184, 14076605455716171637)
+I0207 13:47:06.291739 140019253761792 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:2, TPU, 17179869184, 14076605455716171637)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:3, TPU, 17179869184, 11108634552182612601)
+I0207 13:47:06.291799 140019253761792 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:3, TPU, 17179869184, 11108634552182612601)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:4, TPU, 17179869184, 2417708730075968638)
+I0207 13:47:06.291856 140019253761792 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:4, TPU, 17179869184, 2417708730075968638)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:5, TPU, 17179869184, 211519185758752255)
+I0207 13:47:06.291914 140019253761792 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:5, TPU, 17179869184, 211519185758752255)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:6, TPU, 17179869184, 15019240820913132751)
+I0207 13:47:06.291973 140019253761792 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:6, TPU, 17179869184, 15019240820913132751)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:7, TPU, 17179869184, 17417645580182084151)
+I0207 13:47:06.292030 140019253761792 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:7, TPU, 17179869184, 17417645580182084151)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU_SYSTEM:0, TPU_SYSTEM, 17179869184, 8843223457521000994)
+I0207 13:47:06.292086 140019253761792 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU_SYSTEM:0, TPU_SYSTEM, 17179869184, 8843223457521000994)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:XLA_CPU:0, XLA_CPU, 17179869184, 12978005202918132346)
+I0207 13:47:06.292145 140019253761792 tpu_system_metadata.py:154] *** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:XLA_CPU:0, XLA_CPU, 17179869184, 12978005202918132346)
+WARNING:tensorflow:From /home/zhangxw0413/.local/lib/python3.5/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+W0207 13:47:06.299238 140019253761792 deprecation.py:506] From /home/zhangxw0413/.local/lib/python3.5/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+WARNING:tensorflow:From /home/zhangxw0413/.local/lib/python3.5/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W0207 13:47:06.299865 140019253761792 deprecation.py:323] From /home/zhangxw0413/.local/lib/python3.5/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+INFO:tensorflow:Calling model_fn.
+I0207 13:47:06.315172 140019253761792 estimator.py:1148] Calling model_fn.
+WARNING:tensorflow:From run_pretraining_noise.py:338: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+W0207 13:47:06.316137 140019253761792 module_wrapper.py:139] From run_pretraining_noise.py:338: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+WARNING:tensorflow:From run_pretraining_noise.py:369: parallel_interleave (from tensorflow.contrib.data.python.ops.interleave_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.parallel_interleave(...)`.
+W0207 13:47:06.324807 140019253761792 deprecation.py:323] From run_pretraining_noise.py:369: parallel_interleave (from tensorflow.contrib.data.python.ops.interleave_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.parallel_interleave(...)`.
+WARNING:tensorflow:From /home/zhangxw0413/.local/lib/python3.5/site-packages/tensorflow_core/contrib/data/python/ops/interleave_ops.py:77: parallel_interleave (from tensorflow.python.data.experimental.ops.interleave_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.interleave(map_func, cycle_length, block_length, num_parallel_calls=tf.data.experimental.AUTOTUNE)` instead. If sloppy execution is desired, use `tf.data.Options.experimental_determinstic`.
+W0207 13:47:06.325102 140019253761792 deprecation.py:323] From /home/zhangxw0413/.local/lib/python3.5/site-packages/tensorflow_core/contrib/data/python/ops/interleave_ops.py:77: parallel_interleave (from tensorflow.python.data.experimental.ops.interleave_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.interleave(map_func, cycle_length, block_length, num_parallel_calls=tf.data.experimental.AUTOTUNE)` instead. If sloppy execution is desired, use `tf.data.Options.experimental_determinstic`.
+WARNING:tensorflow:From run_pretraining_noise.py:386: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+W0207 13:47:06.359451 140019253761792 deprecation.py:323] From run_pretraining_noise.py:386: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+WARNING:tensorflow:From /home/zhangxw0413/.local/lib/python3.5/site-packages/tensorflow_core/contrib/data/python/ops/batching.py:276: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+W0207 13:47:06.359772 140019253761792 deprecation.py:323] From /home/zhangxw0413/.local/lib/python3.5/site-packages/tensorflow_core/contrib/data/python/ops/batching.py:276: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+WARNING:tensorflow:From /home/zhangxw0413/.local/lib/python3.5/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+W0207 13:47:06.437801 140019253761792 module_wrapper.py:139] From /home/zhangxw0413/.local/lib/python3.5/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+WARNING:tensorflow:From run_pretraining_noise.py:401: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+W0207 13:47:06.569710 140019253761792 deprecation.py:323] From run_pretraining_noise.py:401: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+INFO:tensorflow:Found small feature: next_sentence_labels [128, 1]
+I0207 13:47:06.606913 140019253761792 tpu_estimator.py:1201] Found small feature: next_sentence_labels [128, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [128, 1]
+I0207 13:47:06.609348 140019253761792 tpu_estimator.py:1201] Found small feature: next_sentence_labels [128, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [128, 1]
+I0207 13:47:06.611547 140019253761792 tpu_estimator.py:1201] Found small feature: next_sentence_labels [128, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [128, 1]
+I0207 13:47:06.614060 140019253761792 tpu_estimator.py:1201] Found small feature: next_sentence_labels [128, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [128, 1]
+I0207 13:47:06.616355 140019253761792 tpu_estimator.py:1201] Found small feature: next_sentence_labels [128, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [128, 1]
+I0207 13:47:06.618674 140019253761792 tpu_estimator.py:1201] Found small feature: next_sentence_labels [128, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [128, 1]
+I0207 13:47:06.620838 140019253761792 tpu_estimator.py:1201] Found small feature: next_sentence_labels [128, 1]
+INFO:tensorflow:Found small feature: next_sentence_labels [128, 1]
+I0207 13:47:06.623089 140019253761792 tpu_estimator.py:1201] Found small feature: next_sentence_labels [128, 1]
+2020-02-07 13:47:06.644847: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2020-02-07 13:47:06.644913: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: UNKNOWN ERROR (303)
+2020-02-07 13:47:06.644941: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (zhangxw0413): /proc/driver/nvidia/version does not exist
+INFO:tensorflow:*** Features ***
+I0207 13:47:06.666062 140019253761792 run_pretraining_noise.py:117] *** Features ***
+INFO:tensorflow:  name = input_ids, shape = (128, 128)
+I0207 13:47:06.666348 140019253761792 run_pretraining_noise.py:119]   name = input_ids, shape = (128, 128)
+INFO:tensorflow:  name = input_mask, shape = (128, 128)
+I0207 13:47:06.666449 140019253761792 run_pretraining_noise.py:119]   name = input_mask, shape = (128, 128)
+INFO:tensorflow:  name = masked_lm_ids, shape = (128, 20)
+I0207 13:47:06.666534 140019253761792 run_pretraining_noise.py:119]   name = masked_lm_ids, shape = (128, 20)
+INFO:tensorflow:  name = masked_lm_positions, shape = (128, 20)
+I0207 13:47:06.666601 140019253761792 run_pretraining_noise.py:119]   name = masked_lm_positions, shape = (128, 20)
+INFO:tensorflow:  name = masked_lm_weights, shape = (128, 20)
+I0207 13:47:06.666666 140019253761792 run_pretraining_noise.py:119]   name = masked_lm_weights, shape = (128, 20)
+INFO:tensorflow:  name = next_sentence_labels, shape = (128, 1)
+I0207 13:47:06.666737 140019253761792 run_pretraining_noise.py:119]   name = next_sentence_labels, shape = (128, 1)
+INFO:tensorflow:  name = segment_ids, shape = (128, 128)
+I0207 13:47:06.666799 140019253761792 run_pretraining_noise.py:119]   name = segment_ids, shape = (128, 128)
+WARNING:tensorflow:From /home/zhangxw0413/github/bert/modeling_noise.py:171: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+W0207 13:47:06.667058 140019253761792 module_wrapper.py:139] From /home/zhangxw0413/github/bert/modeling_noise.py:171: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /home/zhangxw0413/github/bert/modeling_noise.py:409: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+W0207 13:47:06.669660 140019253761792 module_wrapper.py:139] From /home/zhangxw0413/github/bert/modeling_noise.py:409: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+WARNING:tensorflow:From /home/zhangxw0413/github/bert/modeling_noise.py:490: The name tf.assert_less_equal is deprecated. Please use tf.compat.v1.assert_less_equal instead.
+
+W0207 13:47:06.706133 140019253761792 module_wrapper.py:139] From /home/zhangxw0413/github/bert/modeling_noise.py:490: The name tf.assert_less_equal is deprecated. Please use tf.compat.v1.assert_less_equal instead.
+
+WARNING:tensorflow:From /home/zhangxw0413/github/bert/modeling_noise.py:358: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+W0207 13:47:06.757259 140019253761792 deprecation.py:506] From /home/zhangxw0413/github/bert/modeling_noise.py:358: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/zhangxw0413/github/bert/modeling_noise.py:671: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+W0207 13:47:06.781339 140019253761792 deprecation.py:323] From /home/zhangxw0413/github/bert/modeling_noise.py:671: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+WARNING:tensorflow:From /home/zhangxw0413/.local/lib/python3.5/site-packages/tensorflow_core/python/layers/core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+W0207 13:47:06.783460 140019253761792 deprecation.py:323] From /home/zhangxw0413/.local/lib/python3.5/site-packages/tensorflow_core/python/layers/core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From /home/zhangxw0413/github/bert/modeling_noise.py:708: The name tf.random_normal is deprecated. Please use tf.random.normal instead.
+
+W0207 13:47:06.871545 140019253761792 module_wrapper.py:139] From /home/zhangxw0413/github/bert/modeling_noise.py:708: The name tf.random_normal is deprecated. Please use tf.random.normal instead.
+
+WARNING:tensorflow:From run_pretraining_noise.py:151: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+W0207 13:47:10.676808 140019253761792 module_wrapper.py:139] From run_pretraining_noise.py:151: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+INFO:tensorflow:**** Trainable Variables ****
+I0207 13:47:10.677116 140019253761792 run_pretraining_noise.py:168] **** Trainable Variables ****
+INFO:tensorflow:  name = bert/embeddings/word_embeddings:0, shape = (21128, 768)
+I0207 13:47:10.677201 140019253761792 run_pretraining_noise.py:174]   name = bert/embeddings/word_embeddings:0, shape = (21128, 768)
+INFO:tensorflow:  name = bert/embeddings/token_type_embeddings:0, shape = (2, 768)
+I0207 13:47:10.677312 140019253761792 run_pretraining_noise.py:174]   name = bert/embeddings/token_type_embeddings:0, shape = (2, 768)
+INFO:tensorflow:  name = bert/embeddings/position_embeddings:0, shape = (512, 768)
+I0207 13:47:10.677391 140019253761792 run_pretraining_noise.py:174]   name = bert/embeddings/position_embeddings:0, shape = (512, 768)
+INFO:tensorflow:  name = bert/embeddings/LayerNorm/beta:0, shape = (768,)
+I0207 13:47:10.677465 140019253761792 run_pretraining_noise.py:174]   name = bert/embeddings/LayerNorm/beta:0, shape = (768,)
+INFO:tensorflow:  name = bert/embeddings/LayerNorm/gamma:0, shape = (768,)
+I0207 13:47:10.677533 140019253761792 run_pretraining_noise.py:174]   name = bert/embeddings/LayerNorm/gamma:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/query/kernel:0, shape = (768, 768)
+I0207 13:47:10.677600 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_0/attention/self/query/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/query/bias:0, shape = (768,)
+I0207 13:47:10.677673 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_0/attention/self/query/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/key/kernel:0, shape = (768, 768)
+I0207 13:47:10.677739 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_0/attention/self/key/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/key/bias:0, shape = (768,)
+I0207 13:47:10.677809 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_0/attention/self/key/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/value/kernel:0, shape = (768, 768)
+I0207 13:47:10.677875 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_0/attention/self/value/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/value/bias:0, shape = (768,)
+I0207 13:47:10.677956 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_0/attention/self/value/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/scale:0, shape = ()
+I0207 13:47:10.678055 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_0/attention/self/scale:0, shape = ()
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/output/dense/kernel:0, shape = (768, 768)
+I0207 13:47:10.678126 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_0/attention/output/dense/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/output/dense/bias:0, shape = (768,)
+I0207 13:47:10.678198 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_0/attention/output/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/output/LayerNorm/beta:0, shape = (768,)
+I0207 13:47:10.678265 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_0/attention/output/LayerNorm/beta:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/output/LayerNorm/gamma:0, shape = (768,)
+I0207 13:47:10.678344 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_0/attention/output/LayerNorm/gamma:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_0/intermediate/dense/kernel:0, shape = (768, 3072)
+I0207 13:47:10.678410 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_0/intermediate/dense/kernel:0, shape = (768, 3072)
+INFO:tensorflow:  name = bert/encoder/layer_0/intermediate/dense/bias:0, shape = (3072,)
+I0207 13:47:10.678482 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_0/intermediate/dense/bias:0, shape = (3072,)
+INFO:tensorflow:  name = bert/encoder/layer_0/output/dense/kernel:0, shape = (3072, 768)
+I0207 13:47:10.678549 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_0/output/dense/kernel:0, shape = (3072, 768)
+INFO:tensorflow:  name = bert/encoder/layer_0/output/dense/bias:0, shape = (768,)
+I0207 13:47:10.678621 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_0/output/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_0/output/LayerNorm/beta:0, shape = (768,)
+I0207 13:47:10.678687 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_0/output/LayerNorm/beta:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_0/output/LayerNorm/gamma:0, shape = (768,)
+I0207 13:47:10.678752 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_0/output/LayerNorm/gamma:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/query/kernel:0, shape = (768, 768)
+I0207 13:47:10.678818 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_1/attention/self/query/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/query/bias:0, shape = (768,)
+I0207 13:47:10.678888 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_1/attention/self/query/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/key/kernel:0, shape = (768, 768)
+I0207 13:47:10.678962 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_1/attention/self/key/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/key/bias:0, shape = (768,)
+I0207 13:47:10.679034 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_1/attention/self/key/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/value/kernel:0, shape = (768, 768)
+I0207 13:47:10.679416 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_1/attention/self/value/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/value/bias:0, shape = (768,)
+I0207 13:47:10.679530 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_1/attention/self/value/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/scale:0, shape = ()
+I0207 13:47:10.679624 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_1/attention/self/scale:0, shape = ()
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/output/dense/kernel:0, shape = (768, 768)
+I0207 13:47:10.679701 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_1/attention/output/dense/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/output/dense/bias:0, shape = (768,)
+I0207 13:47:10.679781 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_1/attention/output/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/output/LayerNorm/beta:0, shape = (768,)
+I0207 13:47:10.679867 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_1/attention/output/LayerNorm/beta:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/output/LayerNorm/gamma:0, shape = (768,)
+I0207 13:47:10.679952 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_1/attention/output/LayerNorm/gamma:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_1/intermediate/dense/kernel:0, shape = (768, 3072)
+I0207 13:47:10.680026 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_1/intermediate/dense/kernel:0, shape = (768, 3072)
+INFO:tensorflow:  name = bert/encoder/layer_1/intermediate/dense/bias:0, shape = (3072,)
+I0207 13:47:10.680104 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_1/intermediate/dense/bias:0, shape = (3072,)
+INFO:tensorflow:  name = bert/encoder/layer_1/output/dense/kernel:0, shape = (3072, 768)
+I0207 13:47:10.680180 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_1/output/dense/kernel:0, shape = (3072, 768)
+INFO:tensorflow:  name = bert/encoder/layer_1/output/dense/bias:0, shape = (768,)
+I0207 13:47:10.680259 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_1/output/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_1/output/LayerNorm/beta:0, shape = (768,)
+I0207 13:47:10.680334 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_1/output/LayerNorm/beta:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_1/output/LayerNorm/gamma:0, shape = (768,)
+I0207 13:47:10.680431 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_1/output/LayerNorm/gamma:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/query/kernel:0, shape = (768, 768)
+I0207 13:47:10.680509 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_2/attention/self/query/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/query/bias:0, shape = (768,)
+I0207 13:47:10.680590 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_2/attention/self/query/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/key/kernel:0, shape = (768, 768)
+I0207 13:47:10.680675 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_2/attention/self/key/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/key/bias:0, shape = (768,)
+I0207 13:47:10.680774 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_2/attention/self/key/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/value/kernel:0, shape = (768, 768)
+I0207 13:47:10.680846 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_2/attention/self/value/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/value/bias:0, shape = (768,)
+I0207 13:47:10.680934 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_2/attention/self/value/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/scale:0, shape = ()
+I0207 13:47:10.681012 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_2/attention/self/scale:0, shape = ()
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/output/dense/kernel:0, shape = (768, 768)
+I0207 13:47:10.681088 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_2/attention/output/dense/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/output/dense/bias:0, shape = (768,)
+I0207 13:47:10.681165 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_2/attention/output/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/output/LayerNorm/beta:0, shape = (768,)
+I0207 13:47:10.681236 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_2/attention/output/LayerNorm/beta:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/output/LayerNorm/gamma:0, shape = (768,)
+I0207 13:47:10.681305 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_2/attention/output/LayerNorm/gamma:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_2/intermediate/dense/kernel:0, shape = (768, 3072)
+I0207 13:47:10.681389 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_2/intermediate/dense/kernel:0, shape = (768, 3072)
+INFO:tensorflow:  name = bert/encoder/layer_2/intermediate/dense/bias:0, shape = (3072,)
+I0207 13:47:10.681468 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_2/intermediate/dense/bias:0, shape = (3072,)
+INFO:tensorflow:  name = bert/encoder/layer_2/output/dense/kernel:0, shape = (3072, 768)
+I0207 13:47:10.681538 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_2/output/dense/kernel:0, shape = (3072, 768)
+INFO:tensorflow:  name = bert/encoder/layer_2/output/dense/bias:0, shape = (768,)
+I0207 13:47:10.681614 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_2/output/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_2/output/LayerNorm/beta:0, shape = (768,)
+I0207 13:47:10.681684 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_2/output/LayerNorm/beta:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_2/output/LayerNorm/gamma:0, shape = (768,)
+I0207 13:47:10.681778 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_2/output/LayerNorm/gamma:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/query/kernel:0, shape = (768, 768)
+I0207 13:47:10.681855 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_3/attention/self/query/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/query/bias:0, shape = (768,)
+I0207 13:47:10.681932 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_3/attention/self/query/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/key/kernel:0, shape = (768, 768)
+I0207 13:47:10.682032 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_3/attention/self/key/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/key/bias:0, shape = (768,)
+I0207 13:47:10.682116 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_3/attention/self/key/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/value/kernel:0, shape = (768, 768)
+I0207 13:47:10.682187 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_3/attention/self/value/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/value/bias:0, shape = (768,)
+I0207 13:47:10.682260 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_3/attention/self/value/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/scale:0, shape = ()
+I0207 13:47:10.682328 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_3/attention/self/scale:0, shape = ()
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/output/dense/kernel:0, shape = (768, 768)
+I0207 13:47:10.682405 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_3/attention/output/dense/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/output/dense/bias:0, shape = (768,)
+I0207 13:47:10.682481 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_3/attention/output/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/output/LayerNorm/beta:0, shape = (768,)
+I0207 13:47:10.682549 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_3/attention/output/LayerNorm/beta:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/output/LayerNorm/gamma:0, shape = (768,)
+I0207 13:47:10.682616 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_3/attention/output/LayerNorm/gamma:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_3/intermediate/dense/kernel:0, shape = (768, 3072)
+I0207 13:47:10.682690 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_3/intermediate/dense/kernel:0, shape = (768, 3072)
+INFO:tensorflow:  name = bert/encoder/layer_3/intermediate/dense/bias:0, shape = (3072,)
+I0207 13:47:10.682764 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_3/intermediate/dense/bias:0, shape = (3072,)
+INFO:tensorflow:  name = bert/encoder/layer_3/output/dense/kernel:0, shape = (3072, 768)
+I0207 13:47:10.682832 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_3/output/dense/kernel:0, shape = (3072, 768)
+INFO:tensorflow:  name = bert/encoder/layer_3/output/dense/bias:0, shape = (768,)
+I0207 13:47:10.682915 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_3/output/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_3/output/LayerNorm/beta:0, shape = (768,)
+I0207 13:47:10.682985 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_3/output/LayerNorm/beta:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_3/output/LayerNorm/gamma:0, shape = (768,)
+I0207 13:47:10.683051 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_3/output/LayerNorm/gamma:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/query/kernel:0, shape = (768, 768)
+I0207 13:47:10.683118 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_4/attention/self/query/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/query/bias:0, shape = (768,)
+I0207 13:47:10.683192 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_4/attention/self/query/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/key/kernel:0, shape = (768, 768)
+I0207 13:47:10.683260 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_4/attention/self/key/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/key/bias:0, shape = (768,)
+I0207 13:47:10.683332 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_4/attention/self/key/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/value/kernel:0, shape = (768, 768)
+I0207 13:47:10.683403 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_4/attention/self/value/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/value/bias:0, shape = (768,)
+I0207 13:47:10.683476 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_4/attention/self/value/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/scale:0, shape = ()
+I0207 13:47:10.683544 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_4/attention/self/scale:0, shape = ()
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/output/dense/kernel:0, shape = (768, 768)
+I0207 13:47:10.683612 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_4/attention/output/dense/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/output/dense/bias:0, shape = (768,)
+I0207 13:47:10.683684 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_4/attention/output/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/output/LayerNorm/beta:0, shape = (768,)
+I0207 13:47:10.683753 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_4/attention/output/LayerNorm/beta:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/output/LayerNorm/gamma:0, shape = (768,)
+I0207 13:47:10.683818 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_4/attention/output/LayerNorm/gamma:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_4/intermediate/dense/kernel:0, shape = (768, 3072)
+I0207 13:47:10.683893 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_4/intermediate/dense/kernel:0, shape = (768, 3072)
+INFO:tensorflow:  name = bert/encoder/layer_4/intermediate/dense/bias:0, shape = (3072,)
+I0207 13:47:10.683988 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_4/intermediate/dense/bias:0, shape = (3072,)
+INFO:tensorflow:  name = bert/encoder/layer_4/output/dense/kernel:0, shape = (3072, 768)
+I0207 13:47:10.684056 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_4/output/dense/kernel:0, shape = (3072, 768)
+INFO:tensorflow:  name = bert/encoder/layer_4/output/dense/bias:0, shape = (768,)
+I0207 13:47:10.684129 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_4/output/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_4/output/LayerNorm/beta:0, shape = (768,)
+I0207 13:47:10.684197 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_4/output/LayerNorm/beta:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_4/output/LayerNorm/gamma:0, shape = (768,)
+I0207 13:47:10.684263 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_4/output/LayerNorm/gamma:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/query/kernel:0, shape = (768, 768)
+I0207 13:47:10.684329 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_5/attention/self/query/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/query/bias:0, shape = (768,)
+I0207 13:47:10.684406 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_5/attention/self/query/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/key/kernel:0, shape = (768, 768)
+I0207 13:47:10.684473 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_5/attention/self/key/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/key/bias:0, shape = (768,)
+I0207 13:47:10.684572 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_5/attention/self/key/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/value/kernel:0, shape = (768, 768)
+I0207 13:47:10.684645 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_5/attention/self/value/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/value/bias:0, shape = (768,)
+I0207 13:47:10.684717 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_5/attention/self/value/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/scale:0, shape = ()
+I0207 13:47:10.684784 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_5/attention/self/scale:0, shape = ()
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/output/dense/kernel:0, shape = (768, 768)
+I0207 13:47:10.684857 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_5/attention/output/dense/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/output/dense/bias:0, shape = (768,)
+I0207 13:47:10.684932 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_5/attention/output/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/output/LayerNorm/beta:0, shape = (768,)
+I0207 13:47:10.684999 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_5/attention/output/LayerNorm/beta:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/output/LayerNorm/gamma:0, shape = (768,)
+I0207 13:47:10.685065 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_5/attention/output/LayerNorm/gamma:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_5/intermediate/dense/kernel:0, shape = (768, 3072)
+I0207 13:47:10.685131 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_5/intermediate/dense/kernel:0, shape = (768, 3072)
+INFO:tensorflow:  name = bert/encoder/layer_5/intermediate/dense/bias:0, shape = (3072,)
+I0207 13:47:10.685209 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_5/intermediate/dense/bias:0, shape = (3072,)
+INFO:tensorflow:  name = bert/encoder/layer_5/output/dense/kernel:0, shape = (3072, 768)
+I0207 13:47:10.685276 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_5/output/dense/kernel:0, shape = (3072, 768)
+INFO:tensorflow:  name = bert/encoder/layer_5/output/dense/bias:0, shape = (768,)
+I0207 13:47:10.685348 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_5/output/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_5/output/LayerNorm/beta:0, shape = (768,)
+I0207 13:47:10.685419 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_5/output/LayerNorm/beta:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_5/output/LayerNorm/gamma:0, shape = (768,)
+I0207 13:47:10.685485 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_5/output/LayerNorm/gamma:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/query/kernel:0, shape = (768, 768)
+I0207 13:47:10.685551 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_6/attention/self/query/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/query/bias:0, shape = (768,)
+I0207 13:47:10.685623 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_6/attention/self/query/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/key/kernel:0, shape = (768, 768)
+I0207 13:47:10.685690 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_6/attention/self/key/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/key/bias:0, shape = (768,)
+I0207 13:47:10.685760 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_6/attention/self/key/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/value/kernel:0, shape = (768, 768)
+I0207 13:47:10.685837 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_6/attention/self/value/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/value/bias:0, shape = (768,)
+I0207 13:47:10.685920 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_6/attention/self/value/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/scale:0, shape = ()
+I0207 13:47:10.686020 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_6/attention/self/scale:0, shape = ()
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/output/dense/kernel:0, shape = (768, 768)
+I0207 13:47:10.686097 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_6/attention/output/dense/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/output/dense/bias:0, shape = (768,)
+I0207 13:47:10.686169 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_6/attention/output/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/output/LayerNorm/beta:0, shape = (768,)
+I0207 13:47:10.686236 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_6/attention/output/LayerNorm/beta:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/output/LayerNorm/gamma:0, shape = (768,)
+I0207 13:47:10.686302 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_6/attention/output/LayerNorm/gamma:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_6/intermediate/dense/kernel:0, shape = (768, 3072)
+I0207 13:47:10.686371 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_6/intermediate/dense/kernel:0, shape = (768, 3072)
+INFO:tensorflow:  name = bert/encoder/layer_6/intermediate/dense/bias:0, shape = (3072,)
+I0207 13:47:10.686443 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_6/intermediate/dense/bias:0, shape = (3072,)
+INFO:tensorflow:  name = bert/encoder/layer_6/output/dense/kernel:0, shape = (3072, 768)
+I0207 13:47:10.686517 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_6/output/dense/kernel:0, shape = (3072, 768)
+INFO:tensorflow:  name = bert/encoder/layer_6/output/dense/bias:0, shape = (768,)
+I0207 13:47:10.686589 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_6/output/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_6/output/LayerNorm/beta:0, shape = (768,)
+I0207 13:47:10.686655 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_6/output/LayerNorm/beta:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_6/output/LayerNorm/gamma:0, shape = (768,)
+I0207 13:47:10.686721 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_6/output/LayerNorm/gamma:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/query/kernel:0, shape = (768, 768)
+I0207 13:47:10.686786 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_7/attention/self/query/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/query/bias:0, shape = (768,)
+I0207 13:47:10.686868 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_7/attention/self/query/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/key/kernel:0, shape = (768, 768)
+I0207 13:47:10.686942 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_7/attention/self/key/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/key/bias:0, shape = (768,)
+I0207 13:47:10.687015 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_7/attention/self/key/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/value/kernel:0, shape = (768, 768)
+I0207 13:47:10.687082 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_7/attention/self/value/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/value/bias:0, shape = (768,)
+I0207 13:47:10.687153 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_7/attention/self/value/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/scale:0, shape = ()
+I0207 13:47:10.687220 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_7/attention/self/scale:0, shape = ()
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/output/dense/kernel:0, shape = (768, 768)
+I0207 13:47:10.687287 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_7/attention/output/dense/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/output/dense/bias:0, shape = (768,)
+I0207 13:47:10.687359 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_7/attention/output/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/output/LayerNorm/beta:0, shape = (768,)
+I0207 13:47:10.687427 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_7/attention/output/LayerNorm/beta:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/output/LayerNorm/gamma:0, shape = (768,)
+I0207 13:47:10.687493 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_7/attention/output/LayerNorm/gamma:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_7/intermediate/dense/kernel:0, shape = (768, 3072)
+I0207 13:47:10.687557 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_7/intermediate/dense/kernel:0, shape = (768, 3072)
+INFO:tensorflow:  name = bert/encoder/layer_7/intermediate/dense/bias:0, shape = (3072,)
+I0207 13:47:10.687629 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_7/intermediate/dense/bias:0, shape = (3072,)
+INFO:tensorflow:  name = bert/encoder/layer_7/output/dense/kernel:0, shape = (3072, 768)
+I0207 13:47:10.687702 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_7/output/dense/kernel:0, shape = (3072, 768)
+INFO:tensorflow:  name = bert/encoder/layer_7/output/dense/bias:0, shape = (768,)
+I0207 13:47:10.687794 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_7/output/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_7/output/LayerNorm/beta:0, shape = (768,)
+I0207 13:47:10.687870 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_7/output/LayerNorm/beta:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_7/output/LayerNorm/gamma:0, shape = (768,)
+I0207 13:47:10.687937 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_7/output/LayerNorm/gamma:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/query/kernel:0, shape = (768, 768)
+I0207 13:47:10.688002 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_8/attention/self/query/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/query/bias:0, shape = (768,)
+I0207 13:47:10.688072 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_8/attention/self/query/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/key/kernel:0, shape = (768, 768)
+I0207 13:47:10.688143 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_8/attention/self/key/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/key/bias:0, shape = (768,)
+I0207 13:47:10.688213 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_8/attention/self/key/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/value/kernel:0, shape = (768, 768)
+I0207 13:47:10.688278 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_8/attention/self/value/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/value/bias:0, shape = (768,)
+I0207 13:47:10.688357 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_8/attention/self/value/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/scale:0, shape = ()
+I0207 13:47:10.688425 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_8/attention/self/scale:0, shape = ()
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/output/dense/kernel:0, shape = (768, 768)
+I0207 13:47:10.688493 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_8/attention/output/dense/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/output/dense/bias:0, shape = (768,)
+I0207 13:47:10.688563 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_8/attention/output/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/output/LayerNorm/beta:0, shape = (768,)
+I0207 13:47:10.688629 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_8/attention/output/LayerNorm/beta:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/output/LayerNorm/gamma:0, shape = (768,)
+I0207 13:47:10.688694 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_8/attention/output/LayerNorm/gamma:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_8/intermediate/dense/kernel:0, shape = (768, 3072)
+I0207 13:47:10.688759 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_8/intermediate/dense/kernel:0, shape = (768, 3072)
+INFO:tensorflow:  name = bert/encoder/layer_8/intermediate/dense/bias:0, shape = (3072,)
+I0207 13:47:10.688829 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_8/intermediate/dense/bias:0, shape = (3072,)
+INFO:tensorflow:  name = bert/encoder/layer_8/output/dense/kernel:0, shape = (3072, 768)
+I0207 13:47:10.688902 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_8/output/dense/kernel:0, shape = (3072, 768)
+INFO:tensorflow:  name = bert/encoder/layer_8/output/dense/bias:0, shape = (768,)
+I0207 13:47:10.688982 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_8/output/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_8/output/LayerNorm/beta:0, shape = (768,)
+I0207 13:47:10.689048 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_8/output/LayerNorm/beta:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_8/output/LayerNorm/gamma:0, shape = (768,)
+I0207 13:47:10.689114 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_8/output/LayerNorm/gamma:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/query/kernel:0, shape = (768, 768)
+I0207 13:47:10.689179 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_9/attention/self/query/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/query/bias:0, shape = (768,)
+I0207 13:47:10.689251 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_9/attention/self/query/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/key/kernel:0, shape = (768, 768)
+I0207 13:47:10.689316 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_9/attention/self/key/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/key/bias:0, shape = (768,)
+I0207 13:47:10.689390 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_9/attention/self/key/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/value/kernel:0, shape = (768, 768)
+I0207 13:47:10.689457 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_9/attention/self/value/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/value/bias:0, shape = (768,)
+I0207 13:47:10.689526 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_9/attention/self/value/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/scale:0, shape = ()
+I0207 13:47:10.689592 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_9/attention/self/scale:0, shape = ()
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/output/dense/kernel:0, shape = (768, 768)
+I0207 13:47:10.689659 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_9/attention/output/dense/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/output/dense/bias:0, shape = (768,)
+I0207 13:47:10.689729 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_9/attention/output/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/output/LayerNorm/beta:0, shape = (768,)
+I0207 13:47:10.689795 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_9/attention/output/LayerNorm/beta:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/output/LayerNorm/gamma:0, shape = (768,)
+I0207 13:47:10.689868 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_9/attention/output/LayerNorm/gamma:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_9/intermediate/dense/kernel:0, shape = (768, 3072)
+I0207 13:47:10.689935 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_9/intermediate/dense/kernel:0, shape = (768, 3072)
+INFO:tensorflow:  name = bert/encoder/layer_9/intermediate/dense/bias:0, shape = (3072,)
+I0207 13:47:10.690033 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_9/intermediate/dense/bias:0, shape = (3072,)
+INFO:tensorflow:  name = bert/encoder/layer_9/output/dense/kernel:0, shape = (3072, 768)
+I0207 13:47:10.690106 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_9/output/dense/kernel:0, shape = (3072, 768)
+INFO:tensorflow:  name = bert/encoder/layer_9/output/dense/bias:0, shape = (768,)
+I0207 13:47:10.690186 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_9/output/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_9/output/LayerNorm/beta:0, shape = (768,)
+I0207 13:47:10.690254 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_9/output/LayerNorm/beta:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_9/output/LayerNorm/gamma:0, shape = (768,)
+I0207 13:47:10.690320 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_9/output/LayerNorm/gamma:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/query/kernel:0, shape = (768, 768)
+I0207 13:47:10.690390 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_10/attention/self/query/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/query/bias:0, shape = (768,)
+I0207 13:47:10.690461 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_10/attention/self/query/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/key/kernel:0, shape = (768, 768)
+I0207 13:47:10.690527 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_10/attention/self/key/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/key/bias:0, shape = (768,)
+I0207 13:47:10.690600 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_10/attention/self/key/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/value/kernel:0, shape = (768, 768)
+I0207 13:47:10.690666 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_10/attention/self/value/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/value/bias:0, shape = (768,)
+I0207 13:47:10.690737 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_10/attention/self/value/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/scale:0, shape = ()
+I0207 13:47:10.690804 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_10/attention/self/scale:0, shape = ()
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/output/dense/kernel:0, shape = (768, 768)
+I0207 13:47:10.690880 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_10/attention/output/dense/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/output/dense/bias:0, shape = (768,)
+I0207 13:47:10.690952 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_10/attention/output/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/output/LayerNorm/beta:0, shape = (768,)
+I0207 13:47:10.691020 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_10/attention/output/LayerNorm/beta:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/output/LayerNorm/gamma:0, shape = (768,)
+I0207 13:47:10.691085 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_10/attention/output/LayerNorm/gamma:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_10/intermediate/dense/kernel:0, shape = (768, 3072)
+I0207 13:47:10.691150 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_10/intermediate/dense/kernel:0, shape = (768, 3072)
+INFO:tensorflow:  name = bert/encoder/layer_10/intermediate/dense/bias:0, shape = (3072,)
+I0207 13:47:10.691222 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_10/intermediate/dense/bias:0, shape = (3072,)
+INFO:tensorflow:  name = bert/encoder/layer_10/output/dense/kernel:0, shape = (3072, 768)
+I0207 13:47:10.691289 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_10/output/dense/kernel:0, shape = (3072, 768)
+INFO:tensorflow:  name = bert/encoder/layer_10/output/dense/bias:0, shape = (768,)
+I0207 13:47:10.691364 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_10/output/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_10/output/LayerNorm/beta:0, shape = (768,)
+I0207 13:47:10.691443 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_10/output/LayerNorm/beta:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_10/output/LayerNorm/gamma:0, shape = (768,)
+I0207 13:47:10.691510 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_10/output/LayerNorm/gamma:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/query/kernel:0, shape = (768, 768)
+I0207 13:47:10.691576 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_11/attention/self/query/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/query/bias:0, shape = (768,)
+I0207 13:47:10.691648 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_11/attention/self/query/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/key/kernel:0, shape = (768, 768)
+I0207 13:47:10.691714 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_11/attention/self/key/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/key/bias:0, shape = (768,)
+I0207 13:47:10.691785 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_11/attention/self/key/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/value/kernel:0, shape = (768, 768)
+I0207 13:47:10.691859 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_11/attention/self/value/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/value/bias:0, shape = (768,)
+I0207 13:47:10.691931 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_11/attention/self/value/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/scale:0, shape = ()
+I0207 13:47:10.691998 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_11/attention/self/scale:0, shape = ()
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/output/dense/kernel:0, shape = (768, 768)
+I0207 13:47:10.692065 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_11/attention/output/dense/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/output/dense/bias:0, shape = (768,)
+I0207 13:47:10.692137 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_11/attention/output/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/output/LayerNorm/beta:0, shape = (768,)
+I0207 13:47:10.692204 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_11/attention/output/LayerNorm/beta:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/output/LayerNorm/gamma:0, shape = (768,)
+I0207 13:47:10.692270 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_11/attention/output/LayerNorm/gamma:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_11/intermediate/dense/kernel:0, shape = (768, 3072)
+I0207 13:47:10.692335 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_11/intermediate/dense/kernel:0, shape = (768, 3072)
+INFO:tensorflow:  name = bert/encoder/layer_11/intermediate/dense/bias:0, shape = (3072,)
+I0207 13:47:10.692411 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_11/intermediate/dense/bias:0, shape = (3072,)
+INFO:tensorflow:  name = bert/encoder/layer_11/output/dense/kernel:0, shape = (3072, 768)
+I0207 13:47:10.692478 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_11/output/dense/kernel:0, shape = (3072, 768)
+INFO:tensorflow:  name = bert/encoder/layer_11/output/dense/bias:0, shape = (768,)
+I0207 13:47:10.692551 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_11/output/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_11/output/LayerNorm/beta:0, shape = (768,)
+I0207 13:47:10.692627 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_11/output/LayerNorm/beta:0, shape = (768,)
+INFO:tensorflow:  name = bert/encoder/layer_11/output/LayerNorm/gamma:0, shape = (768,)
+I0207 13:47:10.692696 140019253761792 run_pretraining_noise.py:174]   name = bert/encoder/layer_11/output/LayerNorm/gamma:0, shape = (768,)
+INFO:tensorflow:  name = bert/pooler/dense/kernel:0, shape = (768, 768)
+I0207 13:47:10.692762 140019253761792 run_pretraining_noise.py:174]   name = bert/pooler/dense/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = bert/pooler/dense/bias:0, shape = (768,)
+I0207 13:47:10.692836 140019253761792 run_pretraining_noise.py:174]   name = bert/pooler/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = cls/predictions/transform/dense/kernel:0, shape = (768, 768)
+I0207 13:47:10.692909 140019253761792 run_pretraining_noise.py:174]   name = cls/predictions/transform/dense/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = cls/predictions/transform/dense/bias:0, shape = (768,)
+I0207 13:47:10.692980 140019253761792 run_pretraining_noise.py:174]   name = cls/predictions/transform/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = cls/predictions/transform/LayerNorm/beta:0, shape = (768,)
+I0207 13:47:10.693045 140019253761792 run_pretraining_noise.py:174]   name = cls/predictions/transform/LayerNorm/beta:0, shape = (768,)
+INFO:tensorflow:  name = cls/predictions/transform/LayerNorm/gamma:0, shape = (768,)
+I0207 13:47:10.693111 140019253761792 run_pretraining_noise.py:174]   name = cls/predictions/transform/LayerNorm/gamma:0, shape = (768,)
+INFO:tensorflow:  name = cls/predictions/output_bias:0, shape = (21128,)
+I0207 13:47:10.693176 140019253761792 run_pretraining_noise.py:174]   name = cls/predictions/output_bias:0, shape = (21128,)
+INFO:tensorflow:  name = cls/seq_relationship/output_weights:0, shape = (2, 768)
+I0207 13:47:10.693241 140019253761792 run_pretraining_noise.py:174]   name = cls/seq_relationship/output_weights:0, shape = (2, 768)
+INFO:tensorflow:  name = cls/seq_relationship/output_bias:0, shape = (2,)
+I0207 13:47:10.693312 140019253761792 run_pretraining_noise.py:174]   name = cls/seq_relationship/output_bias:0, shape = (2,)
+WARNING:tensorflow:From /home/zhangxw0413/github/bert/optimization.py:27: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+W0207 13:47:10.693489 140019253761792 module_wrapper.py:139] From /home/zhangxw0413/github/bert/optimization.py:27: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+WARNING:tensorflow:From /home/zhangxw0413/github/bert/optimization.py:32: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+W0207 13:47:10.695123 140019253761792 module_wrapper.py:139] From /home/zhangxw0413/github/bert/optimization.py:32: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+WARNING:tensorflow:From /home/zhangxw0413/.local/lib/python3.5/site-packages/tensorflow_core/python/ops/math_grad.py:1375: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0207 13:47:10.932810 140019253761792 deprecation.py:323] From /home/zhangxw0413/.local/lib/python3.5/site-packages/tensorflow_core/python/ops/math_grad.py:1375: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+INFO:tensorflow:Create CheckpointSaverHook.
+I0207 13:47:26.906646 140019253761792 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+I0207 13:47:27.341571 140019253761792 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:TPU job name worker
+I0207 13:47:30.706514 140019253761792 tpu_estimator.py:506] TPU job name worker
+INFO:tensorflow:Graph was finalized.
+I0207 13:47:32.578854 140019253761792 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Running local_init_op.
+I0207 13:47:40.138710 140019253761792 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0207 13:47:40.811707 140019253761792 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Saving checkpoints for 0 into gs://models_zxw/fine_tuning_models/nlp/bert_zh_clue_corpus/len_128_noise/20200207-134702/model.ckpt.
+I0207 13:47:51.774424 140019253761792 basic_session_run_hooks.py:606] Saving checkpoints for 0 into gs://models_zxw/fine_tuning_models/nlp/bert_zh_clue_corpus/len_128_noise/20200207-134702/model.ckpt.
+WARNING:tensorflow:From /home/zhangxw0413/.local/lib/python3.5/site-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py:751: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Prefer Variable.assign which has equivalent behavior in 2.X.
+W0207 13:48:16.427541 140019253761792 deprecation.py:323] From /home/zhangxw0413/.local/lib/python3.5/site-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py:751: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Prefer Variable.assign which has equivalent behavior in 2.X.
+INFO:tensorflow:Initialized dataset iterators in 0 seconds
+I0207 13:48:17.801013 140019253761792 util.py:98] Initialized dataset iterators in 0 seconds
+INFO:tensorflow:Installing graceful shutdown hook.
+I0207 13:48:17.802289 140019253761792 session_support.py:332] Installing graceful shutdown hook.
+2020-02-07 13:48:17.803181: W tensorflow/core/distributed_runtime/rpc/grpc_session.cc:370] GrpcSession::ListDevices will initialize the session with an empty graph and other defaults because the session has not yet been created.
+INFO:tensorflow:Creating heartbeat manager for ['/job:worker/replica:0/task:0/device:CPU:0']
+I0207 13:48:17.808803 140019253761792 session_support.py:82] Creating heartbeat manager for ['/job:worker/replica:0/task:0/device:CPU:0']
+INFO:tensorflow:Configuring worker heartbeat: shutdown_mode: WAIT_FOR_COORDINATOR
+
+I0207 13:48:17.811533 140019253761792 session_support.py:105] Configuring worker heartbeat: shutdown_mode: WAIT_FOR_COORDINATOR
+
+INFO:tensorflow:Init TPU system
+I0207 13:48:17.816233 140019253761792 tpu_estimator.py:567] Init TPU system
+INFO:tensorflow:Initialized TPU in 6 seconds
+I0207 13:48:24.417995 140019253761792 tpu_estimator.py:576] Initialized TPU in 6 seconds
+INFO:tensorflow:Starting infeed thread controller.
+I0207 13:48:24.419688 140017267631872 tpu_estimator.py:521] Starting infeed thread controller.
+INFO:tensorflow:Starting outfeed thread controller.
+I0207 13:48:24.420632 140017259239168 tpu_estimator.py:540] Starting outfeed thread controller.
+I0207 13:48:24.466301 140017250846464 transport.py:157] Attempting refresh to obtain initial access_token
+W0207 13:48:24.497443 140017250846464 http.py:118] Invalid JSON content from response: b'{\n  "error": {\n    "code": 403,\n    "message": "Permission denied on resource project None.",\n    "status": "PERMISSION_DENIED",\n    "details": [\n      {\n        "@type": "type.googleapis.com/google.rpc.Help",\n        "links": [\n          {\n            "description": "Google developer console API key",\n            "url": "https://console.developers.google.com/project/None/apiui/credential"\n          }\n        ]\n      }\n    ]\n  }\n}\n'
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/home/zhangxw0413/.local/lib/python3.5/site-packages/tensorflow_core/python/distribute/cluster_resolver/tpu_cluster_resolver.py", line 476, in _fetch_cloud_tpu_metadata
+    return request.execute()
+  File "/usr/local/lib/python3.5/dist-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/googleapiclient/http.py", line 856, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 403 when requesting https://tpu.googleapis.com/v1/projects/None/locations/us-central1-a/nodes/10.100.247.82:8470?alt=json returned "Permission denied on resource project None.". Details: "[{'links': [{'description': 'Google developer console API key', 'url': 'https://console.developers.google.com/project/None/apiui/credential'}], '@type': 'type.googleapis.com/google.rpc.Help'}]">
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/threading.py", line 914, in _bootstrap_inner
+    self.run()
+  File "/home/zhangxw0413/.local/lib/python3.5/site-packages/tensorflow_core/python/tpu/preempted_hook.py", line 87, in run
+    response = self._cluster._fetch_cloud_tpu_metadata()  # pylint: disable=protected-access
+  File "/home/zhangxw0413/.local/lib/python3.5/site-packages/tensorflow_core/python/distribute/cluster_resolver/tpu_cluster_resolver.py", line 480, in _fetch_cloud_tpu_metadata
+    "constructor. Exception: %s" % (self._tpu, e))
+ValueError: Could not lookup TPU metadata from name 'b'10.100.247.82:8470''. Please doublecheck the tpu argument in the TPUClusterResolver constructor. Exception: <HttpError 403 when requesting https://tpu.googleapis.com/v1/projects/None/locations/us-central1-a/nodes/10.100.247.82:8470?alt=json returned "Permission denied on resource project None.". Details: "[{'links': [{'description': 'Google developer console API key', 'url': 'https://console.developers.google.com/project/None/apiui/credential'}], '@type': 'type.googleapis.com/google.rpc.Help'}]">
+
+INFO:tensorflow:Enqueue next (1000) batch(es) of data to infeed.
+I0207 13:48:25.093544 140019253761792 tpu_estimator.py:600] Enqueue next (1000) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1000) batch(es) of data from outfeed.
+I0207 13:48:25.093921 140019253761792 tpu_estimator.py:604] Dequeue next (1000) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (0, 0)
+I0207 13:49:12.283746 140017259239168 tpu_estimator.py:279] Outfeed finished for iteration (0, 0)
+INFO:tensorflow:Outfeed finished for iteration (0, 154)
+I0207 13:50:12.328938 140017259239168 tpu_estimator.py:279] Outfeed finished for iteration (0, 154)
+INFO:tensorflow:Outfeed finished for iteration (0, 308)
+I0207 13:51:12.374956 140017259239168 tpu_estimator.py:279] Outfeed finished for iteration (0, 308)
