@@ -18,7 +18,7 @@ do
     --do_lower_case=True --max_seq_length=128 --max_predictions_per_seq=20 --masked_lm_prob=0.15 --random_seed=12345 --dupe_factor=5 >$PWD/log_c5_vocab8k/tfrecord_$i.log 2>&1 &
 
   j=$[j+1]
-  if [ $j -eq 10 ];then
+  if [ $j -eq 12 ];then
     wait
     j=0
   fi
