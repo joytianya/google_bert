@@ -710,11 +710,11 @@ def attention_layer(from_tensor,
   h = size_per_head
   # q-k. ok
   qk_minus=tf.abs(query_layer-key_layer) # [B, N, F, H]
-  qk_minus = tf.layers.dense(qk_minus, 1) #  [B, N, F , T/16] t/factor_hidden_parameterization
+  qk_minus = tf.layers.dense(qk_minus, 1) #  [B, N, F , 1] t/factor_hidden_parameterization
   qk_minus = tf.layers.dense(qk_minus, t, activation=tf.nn.relu) # [B, N, F , T]
   # q .* k
   qk_multiply=tf.multiply(query_layer,key_layer) # [B, N, F, H]
-  qk_multiply = tf.layers.dense(qk_multiply, 1) #  [B, N, F , T] t/factor_hidden_parameterization
+  qk_multiply = tf.layers.dense(qk_multiply, 1) #  [B, N, F , 1] t/factor_hidden_parameterization
   qk_multiply = tf.layers.dense(qk_multiply, t, activation=tf.nn.relu) # [B, N, F , T]
   # [q,k]
   # qk_concat = tf.concat([query_layer,key_layer], axis=2) # [B, N, F+T , H]
