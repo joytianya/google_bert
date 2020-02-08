@@ -51,4 +51,4 @@ run_task() {
 # run_task afqmc bert_base_learnable_c5 128 16 2e-5 3 300 10.240.1.18 # DOING
 #run_task tnews bert_base_learnable_c5 128 16 2e-5 3 300 10.240.1.26 #
 # run_task iflytek bert_base_learnable_c5 128 32 2e-5 3 300 10.240.1.2
-run_task cmnli bert_base_learnable_c5 128 64 3e-5 2 300 10.240.1.34
+run_task cmnli bert_base_learnable_c5 128 64 3e-5 2 1000 10.240.1.34
