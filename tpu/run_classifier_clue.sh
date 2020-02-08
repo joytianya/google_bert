@@ -48,10 +48,10 @@ run_task() {
         --do_predict=true 
 }
 ##command##task_name##model_name##max_seq_length##train_batch_size##learning_rate##num_train_epochs##save_checkpoints_steps##tpu_ip
-run_task afqmc bert_clue_normal_c5 128 16 2e-5 5 100 10.100.247.82
-run_task tnews bert_clue_normal_c5 128 16 2e-5 5 100 10.100.247.82
-run_task iflytek bert_clue_normal_c5 128 32 2e-5 5 100 10.100.247.82
-run_task cmnli bert_clue_normal_c5 128 64 3e-5 5 100 10.100.247.82
+run_task afqmc bert_clue_normal_c5 128 16 2e-5 3 300 10.100.247.82
+run_task tnews bert_clue_normal_c5 128 16 2e-5 3 300 10.100.247.82
+run_task iflytek bert_clue_normal_c5 128 32 2e-5 3 300 10.100.247.82
+run_task cmnli bert_clue_normal_c5 128 64 3e-5 2 300 10.100.247.82
 
 #run_task csl bert_clue_normal_c5 128 16 1e-5 5 100 10.62.58.202
 #run_task wsc bert_clue_normal_c5 128 16 1e-5 10 10 10.100.247.82
