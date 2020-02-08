@@ -2,10 +2,10 @@
 CURRENT_DIR=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
 export PYTHONPATH=$CURRENT_DIR/../../:$PYTHONPATH
 CURRENT_TIME=$(date "+%Y%m%d-%H%M%S")
-CLUE_DATA_DIR=gs://clue_pretrain_corpus/experiments/public_data
-CLUE_PREV_TRAINED_MODEL_DIR=gs://clue_pretrain_corpus/experiments
+CLUE_DATA_DIR=gs://clue_pretrain_corpus/experiments/public_data # no change
+CLUE_PREV_TRAINED_MODEL_DIR=gs://clue_pretrain_corpus/experiments # no change
 #gs://models_zxw/prev_trained_models/nlp/clue-model
-CLUE_OUTPUT_DIR=gs://clue_pretrain_corpus/experiments/fine_tuning/bert_base_learnable_c5
+CLUE_OUTPUT_DIR=gs://clue_pretrain_corpus/experiments/fine_tuning/bert_base_learnable_c5 # no change
 
 run_task() {
   TASK_NAME=$1
@@ -39,7 +39,7 @@ run_task() {
         $COMMON_ARGS \
         --do_train=true \
         --do_eval=false \
-        --do_predict=false 
+        --do_predict=false
 
   echo "Start predict..."
   python3 $CURRENT_DIR/../run_classifier.py \
@@ -49,7 +49,7 @@ run_task() {
         --do_predict=true 
 }
 ##command##task_name##model_name##max_seq_length##train_batch_size##learning_rate##num_train_epochs##save_checkpoints_steps##tpu_ip
-run_task afqmc bert_base_learnable_c5 128 16 2e-5 3 300 10.240.1.18
-# run_task tnews bert_clue_normal_c5 128 16 2e-5 3 300 10.100.247.82
-# run_task iflytek bert_clue_normal_c5 128 32 2e-5 3 300 10.100.247.82
-# run_task cmnli bert_clue_normal_c5 128 64 3e-5 2 300 10.100.247.82
+# run_task afqmc bert_base_learnable_c5 128 16 2e-5 3 300 10.240.1.18 # DONE
+run_task tnews bert_base_learnable_c5 128 16 2e-5 3 300 10.240.1.18 # DOING
+# run_task iflytek bert_base_learnable_c5 128 32 2e-5 3 300 10.240.1.18
+# run_task cmnli bert_base_learnable_c5 128 64 3e-5 2 300 10.240.1.18
