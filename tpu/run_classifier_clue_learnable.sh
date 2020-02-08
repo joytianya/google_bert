@@ -2,7 +2,7 @@
 CURRENT_DIR=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
 export PYTHONPATH=$CURRENT_DIR/../../:$PYTHONPATH
 CURRENT_TIME=$(date "+%Y%m%d-%H%M%S")
-CLUE_DATA_DIR=gs://data_zxw/nlp/CLUE
+CLUE_DATA_DIR=gs://clue_pretrain_corpus/experiments/public_data
 CLUE_PREV_TRAINED_MODEL_DIR=gs://clue_pretrain_corpus/experiments
 #gs://models_zxw/prev_trained_models/nlp/clue-model
 CLUE_OUTPUT_DIR=gs://clue_pretrain_corpus/experiments/fine_tuning/bert_base_learnable_c5
