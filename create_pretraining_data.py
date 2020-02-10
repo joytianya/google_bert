@@ -63,6 +63,8 @@ flags.DEFINE_float(
     "short_seq_prob", 0.1,
     "Probability of creating sequences which are shorter than the "
     "maximum length.")
+# add a hyper-parameter: t2s, traditional chinese to simplified chinese
+flags.DEFINE_bool("t2s", False,"traditional chinese to simplified chinese")
 
 def Traditional2Simplified(sentence):
   sentence = Converter('zh-hans').convert(sentence)
@@ -181,7 +183,7 @@ def create_float_feature(values):
 
 def create_training_instances(input_files, tokenizer, max_seq_length,
                               dupe_factor, short_seq_prob, masked_lm_prob,
-                              max_predictions_per_seq, rng,t2s=True):
+                              max_predictions_per_seq, rng):
   """Create `TrainingInstance`s from raw text."""
   all_documents = [[]]
 
@@ -195,7 +197,7 @@ def create_training_instances(input_files, tokenizer, max_seq_length,
     with tf.gfile.GFile(input_file, "r") as reader:
       while True:
         line=reader.readline()
-        if t2s==True: line = Traditional2Simplified(line)
+        if FLAGS.t2s==True: line = Traditional2Simplified(line) # traditional Chinese to simplified Chinese
         line = tokenization.convert_to_unicode(line)
         if not line:
           break
