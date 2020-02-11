@@ -10,7 +10,7 @@ nohup python3 run_pretraining.py \
   --output_dir=$OUTPUT_DIR \
   --do_train=True \
   --do_eval=True \
-  --bert_config_file=$BERT_BASE_DIR/bert_config.json \
+  --bert_config_file=$BERT_BASE_DIR/bert_config_clue.json \
   --train_batch_size=1024 \
   --max_seq_length=128 \
   --max_predictions_per_seq=20 \
