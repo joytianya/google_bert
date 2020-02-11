@@ -17,5 +17,5 @@ nohup python3 run_pretraining.py \
   --num_train_steps=375000 \
   --num_warmup_steps=37500 \
   --learning_rate=1e-4  \
-  --save_checkpoints_steps=3000 > nohup_bert_base_128_c5_vocab2w.out &
+  --save_checkpoints_steps=3000 > nohup_bert_base_128_c5_vocab8k.out &
 
