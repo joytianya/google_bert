@@ -48,7 +48,7 @@ run_task() {
         --do_predict=true 
 }
 ##command##task_name##model_name##max_seq_length##train_batch_size##learning_rate##num_train_epochs##save_checkpoints_steps##tpu_ip
-run_task afqmc bert_base_c5_vocab8k_1g_375k 128 16 2e-5 3 300 10.240.1.26 # DOING #
+run_task afqmc bert_base_c5_vocab8k_1g_375k 128 16 2e-5 3 300 10.240.1.34 # DOING #
 #run_task tnews bert_base_learnable_c5 128 16 2e-5 3 300 10.240.1.18 #
 # run_task iflytek bert_base_learnable_c5 128 32 2e-5 3 300 10.240.1.18
 # run_task cmnli bert_base_learnable_c5 128 64 3e-5 2 300 10.240.1.18
