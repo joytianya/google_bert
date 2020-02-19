@@ -3,7 +3,7 @@ CURRENT_DIR=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
 export PYTHONPATH=$CURRENT_DIR/../../:$PYTHONPATH
 CURRENT_TIME=$(date "+%Y%m%d-%H%M%S")
 CLUE_DATA_DIR=gs://clue_pretrain_corpus/experiments/public_data # 数据文件 no change
-CLUE_PREV_TRAINED_MODEL_DIR=gs://clue_pretrain_corpus/experiments/roberta-large-clue-vocab8k-v2-0217 # 模型文件 no change
+CLUE_PREV_TRAINED_MODEL_DIR=gs://clue_pretrain_corpus/experiments/roberta-large-clue-vocab8k-v3-0219 # 模型文件 no change
 CLUE_OUTPUT_DIR=gs://clue_pretrain_corpus/experiments/fine_tuning # 产出的文件 no change
 
 run_task() {
