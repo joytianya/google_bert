@@ -651,7 +651,7 @@ def model_fn_builder(bert_config, num_labels, init_checkpoint, learning_rate,
 
     tvars = tf.trainable_variables()
     if FLAGS.task_name=='afqmc': # #  add for afqmc which will be init from cmnli, as a transfer learning from similiar task.
-        tvars=[x for x in tvars if 'output_bias' not in x.name]
+        tvars=[x for x in tvars if ('output_bias' not in x.name and 'output_weights' not in x.name)]
     initialized_variable_names = {}
     scaffold_fn = None
     if init_checkpoint:
