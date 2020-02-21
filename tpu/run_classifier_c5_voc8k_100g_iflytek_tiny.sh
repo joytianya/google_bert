@@ -23,7 +23,7 @@ run_task() {
         --task_name=$TASK_NAME \
         --data_dir=$DATA_DIR \
         --vocab_file=$PREV_TRAINED_MODEL_DIR/vocab_clue.txt \
-        --bert_config_file=$PREV_TRAINED_MODEL_DIR/bert_config_tiny_clue.json \
+        --bert_config_file=$PREV_TRAINED_MODEL_DIR/roberta_config_tiny_clue.json \
         --init_checkpoint=$PREV_TRAINED_MODEL_DIR/bert_model.ckpt \
         --max_seq_length=$MAX_SEQ_LENGTH \
         --train_batch_size=$TRAIN_BATCH_SIZE \
