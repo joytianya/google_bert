@@ -50,7 +50,7 @@ run_task() {
 }
 # bert_base_128_c5_vcoab8k_3g
 ##command##task_name##model_name##max_seq_length##train_batch_size##learning_rate##num_train_epochs##save_checkpoints_steps##tpu_ip
-run_task afqmc best_checkpoint_cmnli 128 16 4e-5 5 600 10.240.1.2 # DOING #
+run_task afqmc best_checkpoint_500k_roberta_tiny_clue 128 16 4e-5 5 600 10.240.1.2 # DOING #
 #run_task tnews bert_base_128_c5_vcoab8k_3g 128 16 2e-5 3 300 10.240.1.34 #
 #run_task iflytek bert_base_128_c5_vcoab8k_3g 128 32 2e-5 3 300 10.240.1.26
 #run_task cmnli bert_base_128_c5_vcoab8k_3g 128 64 3e-5 2 1400 10.240.1.10
