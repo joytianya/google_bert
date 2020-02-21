@@ -21,7 +21,7 @@ run_task() {
   COMMON_ARGS="
         --task_name=$TASK_NAME \
         --data_dir=$DATA_DIR \
-        --vocab_file=$PREV_TRAINED_MODEL_DIR/vocab.txt \
+        --vocab_file=$PREV_TRAINED_MODEL_DIR/vocab_clue.txt \
         --bert_config_file=$PREV_TRAINED_MODEL_DIR/roberta_config_tiny_clue.json \
         --init_checkpoint=$PREV_TRAINED_MODEL_DIR/bert_model.ckpt \
         --max_seq_length=$MAX_SEQ_LENGTH \
