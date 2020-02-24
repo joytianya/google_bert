@@ -12,5 +12,6 @@ do
    gsutil -m mv $file gs://raw_text/pretrain_data_test_continue
  else
    gsutil -m mv $file gs://raw_text/pretrain_data_train_continue/clue_corpus_classic_$l.txt
+ fi
  i=$[i+1]
 done
