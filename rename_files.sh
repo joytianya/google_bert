@@ -9,9 +9,9 @@ do
  remainder=$(( $i % 100 ))
  echo "remainder is " $remainder
  if [ "$remainder" -eq 0 ]; then
-   gsutil -m mv $file gs://raw_text/pretrain_data_test_continue
+   gsutil -m cp $file gs://raw_text/pretrain_data_test_continue
  else
-   gsutil -m mv $file gs://raw_text/pretrain_data_train_continue/clue_corpus_classic_$l.txt
+   gsutil -m cp $file gs://raw_text/pretrain_data_train_continue/clue_corpus_classic_$l.txt
  fi
  i=$[i+1]
 done
