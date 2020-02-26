@@ -4,7 +4,8 @@ export PYTHONPATH=$CURRENT_DIR/../../:$PYTHONPATH
 CURRENT_TIME=$(date "+%Y%m%d-%H%M%S")
 CLUE_DATA_DIR=gs://clue_pretrain_corpus/experiments/public_data # 数据文件 no change
 #CLUE_PREV_TRAINED_MODEL_DIR=gs://clue_pretrain_corpus/experiments/roberta-large-clue-vocab8k-bsz512-v1-0221
-CLUE_PREV_TRAINED_MODEL_DIR=gs://clue_pretrain_corpus/experiments/fine_tuning/best_checkpoint_512_additional_30g_294k/cmnli/20200226-103139 # (cmnli init)
+CLUE_PREV_TRAINED_MODEL_DIR=gs://bert_base_dir
+# gs://clue_pretrain_corpus/experiments/fine_tuning/best_checkpoint_512_additional_30g_294k/cmnli/20200226-103139 # (cmnli init)
 
 #gs://clue_pretrain_corpus/experiments/roberta-large-clue-vocab8k-v3-0219 # 模型文件 no change
 CLUE_OUTPUT_DIR=gs://clue_pretrain_corpus/experiments/fine_tuning # 产出的文件 no change
@@ -56,4 +57,4 @@ run_task() {
 #run_task tnews bert_base_128_c5_vcoab8k_3g 128 16 2e-5 3 300 10.240.1.10 #
 #run_task iflytek bert_base_128_c5_vcoab8k_3g 128 32 2e-5 3 300 10.240.1.2
 
-run_task wsc best_checkpoint_cmnli_1wsteps 128 8 1e-5 50 100 10.240.1.10
+run_task wsc roberta-large-wwm-kdxf 128 8 1e-5 50 300 10.240.1.2
