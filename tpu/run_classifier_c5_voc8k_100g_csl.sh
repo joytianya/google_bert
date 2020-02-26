@@ -3,11 +3,9 @@ CURRENT_DIR=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
 export PYTHONPATH=$CURRENT_DIR/../../:$PYTHONPATH
 CURRENT_TIME=$(date "+%Y%m%d-%H%M%S")
 CLUE_DATA_DIR=gs://clue_pretrain_corpus/experiments/public_data # 数据文件 no change
-#CLUE_PREV_TRAINED_MODEL_DIR=gs://clue_pretrain_corpus/experiments/roberta-large-clue-vocab8k-bsz512-v1-0221 (normal)
-CLUE_PREV_TRAINED_MODEL_DIR=gs://clue_pretrain_corpus/experiments/roberta-large-clue-vocab8k-bsz512-v1-0221 # (cmnli init)
-# gs://clue_pretrain_corpus/experiments/roberta-large-clue-vocab8k-v3-0219 # 模型文件 no change
+CLUE_PREV_TRAINED_MODEL_DIR=gs://clue_pretrain_corpus/experiments/roberta-large-clue-vocab8k-bsz512-v1-0221
+#gs://clue_pretrain_corpus/experiments/roberta-large-clue-vocab8k-v3-0219 # 模型文件 no change
 CLUE_OUTPUT_DIR=gs://clue_pretrain_corpus/experiments/fine_tuning # 产出的文件 no change
-
 
 run_task() {
   TASK_NAME=$1
@@ -53,6 +51,7 @@ run_task() {
 # bert_base_128_c5_vcoab8k_3g
 ##command##task_name##model_name##max_seq_length##train_batch_size##learning_rate##num_train_epochs##save_checkpoints_steps##tpu_ip
 #run_task afqmc bert_base_128_c5_vcoab8k_3g 128 16 2e-5 3 300 10.240.1.34 # DOING #
-#run_task tnews bert_base_128_c5_vcoab8k_3g 128 16 2e-5 3 300 10.240.1.34 #
-run_task iflytek best_checkpoint_512_additional_30g_294k 128 32 2e-5 3 200 10.240.1.18
-#run_task cmnli bert_base_128_c5_vcoab8k_3g 128 64 3e-5 2 1400 10.240.1.10
+#run_task tnews bert_base_128_c5_vcoab8k_3g 128 16 2e-5 3 300 10.240.1.10 #
+#run_task iflytek bert_base_128_c5_vcoab8k_3g 128 32 2e-5 3 300 10.240.1.2
+
+run_task csl best_checkpoint_512_additional_30g_294k 256 16 1e-5 5 600 10.240.1.10
