@@ -5,6 +5,7 @@ CURRENT_TIME=$(date "+%Y%m%d-%H%M%S")
 CLUE_DATA_DIR=gs://clue_pretrain_corpus/experiments/public_data # 数据文件 no change
 # CLUE_PREV_TRAINED_MODEL_DIR=gs://clue_pretrain_corpus/experiments/roberta-large-clue-vocab8k-bsz512-v1-0221
 CLUE_PREV_TRAINED_MODEL_DIR=gs://clue_pretrain_corpus/experiments/roberta-large-clue-vocab8k-tiny-bsz512-v2-0226
+
 #gs://clue_pretrain_corpus/experiments/roberta-large-clue-vocab8k-v3-0219 # 模型文件 no change
 CLUE_OUTPUT_DIR=gs://clue_pretrain_corpus/experiments/fine_tuning # 产出的文件 no change
 
@@ -23,8 +24,8 @@ run_task() {
   COMMON_ARGS="
         --task_name=$TASK_NAME \
         --data_dir=$DATA_DIR \
-        --vocab_file=$PREV_TRAINED_MODEL_DIR/vocab.txt \
-        --bert_config_file=$PREV_TRAINED_MODEL_DIR/bert_config.json \
+        --vocab_file=$PREV_TRAINED_MODEL_DIR/vocab_clue.txt \
+        --bert_config_file=$PREV_TRAINED_MODEL_DIR/roberta_config_tiny_clue.json \
         --init_checkpoint=$PREV_TRAINED_MODEL_DIR/bert_model.ckpt \
         --max_seq_length=$MAX_SEQ_LENGTH \
         --train_batch_size=$TRAIN_BATCH_SIZE \
