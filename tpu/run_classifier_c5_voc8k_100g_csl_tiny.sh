@@ -3,10 +3,10 @@ CURRENT_DIR=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
 export PYTHONPATH=$CURRENT_DIR/../../:$PYTHONPATH
 CURRENT_TIME=$(date "+%Y%m%d-%H%M%S")
 CLUE_DATA_DIR=gs://clue_pretrain_corpus/experiments/public_data # 数据文件 no change
-# CLUE_PREV_TRAINED_MODEL_DIR=gs://clue_pretrain_corpus/experiments/roberta-large-clue-vocab8k-tiny-v1-0221 # 模型文件 no change
+# CLUE_PREV_TRAINED_MODEL_DIR=gs://clue_pretrain_corpus/experiments/roberta-large-clue-vocab8k-bsz512-v1-0221
 CLUE_PREV_TRAINED_MODEL_DIR=gs://clue_pretrain_corpus/experiments/roberta-large-clue-vocab8k-tiny-bsz512-v2-0226
+#gs://clue_pretrain_corpus/experiments/roberta-large-clue-vocab8k-v3-0219 # 模型文件 no change
 CLUE_OUTPUT_DIR=gs://clue_pretrain_corpus/experiments/fine_tuning # 产出的文件 no change
-
 
 run_task() {
   TASK_NAME=$1
@@ -23,8 +23,8 @@ run_task() {
   COMMON_ARGS="
         --task_name=$TASK_NAME \
         --data_dir=$DATA_DIR \
-        --vocab_file=$PREV_TRAINED_MODEL_DIR/vocab_clue.txt \
-        --bert_config_file=$PREV_TRAINED_MODEL_DIR/roberta_config_tiny_clue.json \
+        --vocab_file=$PREV_TRAINED_MODEL_DIR/vocab.txt \
+        --bert_config_file=$PREV_TRAINED_MODEL_DIR/bert_config.json \
         --init_checkpoint=$PREV_TRAINED_MODEL_DIR/bert_model.ckpt \
         --max_seq_length=$MAX_SEQ_LENGTH \
         --train_batch_size=$TRAIN_BATCH_SIZE \
@@ -52,7 +52,7 @@ run_task() {
 # bert_base_128_c5_vcoab8k_3g
 ##command##task_name##model_name##max_seq_length##train_batch_size##learning_rate##num_train_epochs##save_checkpoints_steps##tpu_ip
 #run_task afqmc bert_base_128_c5_vcoab8k_3g 128 16 2e-5 3 300 10.240.1.34 # DOING #
-#run_task tnews bert_base_128_c5_vcoab8k_3g 128 16 2e-5 3 300 10.240.1.34 #
-run_task iflytek best_checkpoint_roberta_tiny_clue_with_130g 128 32 4e-5 10 300 10.240.1.18 # for roberta-tiny-clue
-# run_task iflytek best_checkpoint_296k 128 32 2e-5 3 200 10.240.1.18
-#run_task cmnli bert_base_128_c5_vcoab8k_3g 128 64 3e-5 2 1400 10.240.1.10
+#run_task tnews bert_base_128_c5_vcoab8k_3g 128 16 2e-5 3 300 10.240.1.10 #
+#run_task iflytek bert_base_128_c5_vcoab8k_3g 128 32 2e-5 3 300 10.240.1.2
+
+run_task csl best_checkpoint_roberta_tiny_clue_with_130g 256 16 1e-5 5 600 10.240.1.10
