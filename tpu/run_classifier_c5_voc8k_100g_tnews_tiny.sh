@@ -3,7 +3,8 @@ CURRENT_DIR=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
 export PYTHONPATH=$CURRENT_DIR/../../:$PYTHONPATH
 CURRENT_TIME=$(date "+%Y%m%d-%H%M%S")
 CLUE_DATA_DIR=gs://clue_pretrain_corpus/experiments/public_data # 数据文件 no change
-CLUE_PREV_TRAINED_MODEL_DIR=gs://clue_pretrain_corpus/experiments/roberta-large-clue-vocab8k-tiny-v1-0221 # 模型文件 no change
+# CLUE_PREV_TRAINED_MODEL_DIR=gs://clue_pretrain_corpus/experiments/roberta-large-clue-vocab8k-tiny-v1-0221 # 模型文件 no change
+CLUE_PREV_TRAINED_MODEL_DIR=gs://clue_pretrain_corpus/experiments/roberta-large-clue-vocab8k-tiny-bsz512-v2-0226
 CLUE_OUTPUT_DIR=gs://clue_pretrain_corpus/experiments/fine_tuning # 产出的文件 no change
 
 run_task() {
@@ -50,6 +51,6 @@ run_task() {
 # bert_base_128_c5_vcoab8k_3g
 ##command##task_name##model_name##max_seq_length##train_batch_size##learning_rate##num_train_epochs##save_checkpoints_steps##tpu_ip
 #run_task afqmc bert_base_128_c5_vcoab8k_3g 128 16 2e-5 3 300 10.240.1.34 # DOING #
-run_task tnews best_checkpoint_500k_roberta_tiny_clue 128 16 4e-5 5 1300 10.240.1.18 #
+run_task tnews best_checkpoint_roberta_tiny_clue_with_130g 128 16 4e-5 5 1300 10.240.1.18 #
 #run_task iflytek bert_base_128_c5_vcoab8k_3g 128 32 2e-5 3 300 10.240.1.2
 #run_task cmnli bert_base_128_c5_vcoab8k_3g 128 64 3e-5 2 1400 10.240.1.10
