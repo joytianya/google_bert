@@ -54,4 +54,5 @@ run_task() {
 #run_task tnews bert_base_128_c5_vcoab8k_3g 128 16 2e-5 3 300 10.240.1.10 #
 #run_task iflytek bert_base_128_c5_vcoab8k_3g 128 32 2e-5 3 300 10.240.1.2
 
-run_task cmnli best_checkpoint_roberta_tiny_clue_with_130g 128 64 4e-5 2 1400 10.240.1.10
+run_task cmnli best_checkpoint_roberta_tiny_clue_with_130g 128 32 1e-4 6 4000 10.240.1.10
+# run_task cmnli best_checkpoint_roberta_tiny_clue_with_130g 128 64 4e-5 2 1400 10.240.1.10
