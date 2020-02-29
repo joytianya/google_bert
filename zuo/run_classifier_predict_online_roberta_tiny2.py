@@ -35,8 +35,8 @@ FLAGS = flags.FLAGS
 #BERT_BASE_DIR_NEW="zuo/model_files/roberta-zh-layer24-large-x1-10wsteps-0908-new/"
 #BERT_BASE_DIR = "zuo/model_files/roberta-zh-layer24-large-x1-10wsteps-0908-new/"  # "../model_files/inference_with_reason/checkpoint_bert/"
 #BERT_BASE_DIR = "zuo/model_files/0908-bak/"  # "../model_files/inference_with_reason/checkpoint_bert/"
-BERT_BASE_DIR="./model_files/roberta-large-clue/" # TODO
-BERT_BASE_DIR_NEW="./model_files/roberta-large-clue-new/" # TODO
+BERT_BASE_DIR="./model_files/roberta-large-pair/" # TODO
+BERT_BASE_DIR_NEW="./model_files/roberta-large-pair-new/" # TODO
 flags.DEFINE_string("bert_config_file_31", BERT_BASE_DIR + "bert_config.json",
                     "The config json file corresponding to the pre-trained BERT model. "
                     "This specifies the model architecture.")
