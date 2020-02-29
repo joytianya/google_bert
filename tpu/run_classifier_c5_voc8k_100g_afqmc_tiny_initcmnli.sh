@@ -7,7 +7,7 @@ CLUE_DATA_DIR=gs://clue_pretrain_corpus/experiments/public_data # 数据文件 n
 # CLUE_PREV_TRAINED_MODEL_DIR=gs://clue_pretrain_corpus/experiments/fine_tuning/best_checkpoint_512_additional_30g_294k/cmnli/20200226-103139 # (cmnli init)
 #CLUE_PREV_TRAINED_MODEL_DIR=clue_pretrain_corpus/experiments/fine_tuning/best_checkpoint_roberta_tiny_clue_with_130g/cmnli/20200227-112238
 # gs://clue_pretrain_corpus/experiments/roberta-large-clue-vocab8k-v3-0219 # 模型文件 no change
-CLUE_PREV_TRAINED_MODEL_DIR=clue_pretrain_corpus/experiments/fine_tuning/best_checkpoint_roberta_tiny_clue_with_130g/cmnli/20200227-112238
+CLUE_PREV_TRAINED_MODEL_DIR=gs://clue_pretrain_corpus/experiments/fine_tuning/best_checkpoint_roberta_tiny_clue_with_130g/cmnli/20200227-112238
 CLUE_OUTPUT_DIR=gs://clue_pretrain_corpus/experiments/fine_tuning # 产出的文件 no change
 
 run_task() {
